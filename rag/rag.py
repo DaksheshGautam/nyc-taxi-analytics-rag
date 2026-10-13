@@ -109,7 +109,7 @@ def validate_answer(result,chunks):
     if result['status']=='insufficient_evidence':
         if result['claims']:raise GroundingError('An insufficient-evidence response cannot contain claims.')
         return result
-    if not 1<=len(result['claims'])<=5:raise GroundingError('Invalid claim count.')
+    if not 1<=len(result['claims'])<=10:raise GroundingError('An answered result requires between one and ten supported paragraphs; received '+str(len(result['claims']))+'.')
     allowed={c['id']:c for c in chunks}
     for claim in result['claims']:
         if not isinstance(claim,dict) or set(claim)!={'statement','evidence'}:raise GroundingError('Each claim must contain exactly statement (text) and evidence (a list of source_id/quote objects).')

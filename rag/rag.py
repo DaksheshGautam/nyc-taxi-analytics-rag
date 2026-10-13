@@ -157,7 +157,7 @@ def llm_answer(question,chunks,values=None,transport=None):
             data=transport(endpoint,payload)
         else:
             key=provider_key(v)
-            req=urllib.request.Request(endpoint,json.dumps(payload).encode(),{'Content-Type':'application/json','Authorization':'Bearer '+key})
+            req=urllib.request.Request(endpoint,json.dumps(payload).encode(),{'Content-Type':'application/json','Authorization':'Bearer '+key,'User-Agent':'NYC-Taxi-Evidence/1.0'})
             with urllib.request.urlopen(req,timeout=45) as res:data=json.load(res)
         if provider=='openai':text=response_text(data)
         else:
@@ -167,7 +167,13 @@ def llm_answer(question,chunks,values=None,transport=None):
         return validate_answer(json.loads(text),chunks)
     except GroundingError:raise
     except urllib.error.HTTPError as e:
-        codes={401:'The LLM key was rejected.',403:'The key cannot access this model.',429:'The provider rate or quota limit was reached.'}
+        codes={401:'The LLM key was rejected.',403:'The provider denied this request. Check project and model permissions.',429:'The provider rate or quota limit was reached.'}
+        if e.code==403:
+            try:
+                error=json.loads(e.read()).get('error',{});code=error.get('code')
+                if code in ['model_permission_blocked','model_permission_blocked_org','model_permission_blocked_project','model_not_allowed','model_not_found','insufficient_permissions','organization_restricted']:
+                    raise LLMError(codes[403]+' Provider code: '+code) from None
+            except (ValueError,AttributeError,TypeError):pass
         raise LLMError(codes.get(e.code,'The LLM provider returned an error.')) from None
     except LLMError:raise
     except (ValueError,KeyError,TypeError,urllib.error.URLError,TimeoutError):

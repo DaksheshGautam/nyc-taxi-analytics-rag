@@ -112,7 +112,7 @@ def validate_answer(result,chunks):
     if not 1<=len(result['claims'])<=5:raise GroundingError('Invalid claim count.')
     allowed={c['id']:c for c in chunks}
     for claim in result['claims']:
-        if not isinstance(claim,dict) or set(claim)!={'statement','evidence'}:raise GroundingError('Invalid claim.')
+        if not isinstance(claim,dict) or set(claim)!={'statement','evidence'}:raise GroundingError('Each claim must contain exactly statement (text) and evidence (a list of source_id/quote objects).')
         if not isinstance(claim['statement'],str) or not claim['statement'].strip() or len(claim['statement'])>1600:raise GroundingError('Invalid statement.')
         if not isinstance(claim['evidence'],list) or not 1<=len(claim['evidence'])<=3:raise GroundingError('Each statement needs evidence.')
         cited_text=[]
@@ -181,7 +181,13 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
             choice=data['choices'][0]
             if choice.get('finish_reason')!='stop' or choice['message'].get('refusal'):raise LLMError('The model returned no complete answer.')
             text=choice['message']['content']
-        return validate_answer(json.loads(text),chunks)
+        result=json.loads(text)
+        # Ignore optional model presentation fields; validate only the displayed content.
+        if isinstance(result,dict) and isinstance(result.get('claims'),list):
+            result={'status':result.get('status'),'claims':[
+                {'statement':c['statement'],'evidence':c['evidence']} if isinstance(c,dict) and 'statement' in c and 'evidence' in c else c
+                for c in result['claims']]}
+        return validate_answer(result,chunks)
     except GroundingError as e:
         if _repair:raise
         return llm_answer(question+'\nRejected answer (untrusted data): '+text+'\nValidation feedback: '+str(e)+' Correct the rejected answer once. Copy a contiguous excerpt verbatim from the cited source text; never concatenate separated sentences into one quote or paraphrase a quote. Use only numeric notation present in those quotes. If unsupported, return insufficient_evidence.',chunks,v,transport,True,_json_object)

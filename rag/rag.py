@@ -185,6 +185,12 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
         except (ValueError,AttributeError,TypeError):error={}
         if not isinstance(error,dict):error={}
         code=error.get('code')
+        if e.code==429:
+            detail=str(error.get('message',''))
+            scope='daily token' if 'TPD' in detail else 'minute token' if 'TPM' in detail else 'daily request' if 'RPD' in detail else 'minute request' if 'RPM' in detail else 'request or token'
+            quantities=re.search(r'Limit\s+(\d+).*?Used\s+(\d+).*?Requested\s+(\d+)',detail,re.I)
+            counts=(' Limit: '+quantities[1]+'; used: '+quantities[2]+'; requested: '+quantities[3]+'.') if quantities else ''
+            raise LLMError('Groq’s '+scope+' limit was reached.'+counts+' Please retry after the provider limit resets; evidence and charts remain available. (HTTP 429)') from None
         if e.code==400 and code=='json_validate_failed' and provider=='groq' and not _json_object:
             return llm_answer(question+'\nReturn only the required JSON object. Use the exact status/claims/evidence structure provided in the system instructions.',chunks,v,transport,_repair,True)
         codes={400:'The provider could not generate the required answer format. Please try the question again; evidence and charts are still available.',401:'The LLM key was rejected.',403:'The provider denied this request. Check project and model permissions.',429:'Groq’s request or token limit was reached. Please wait a minute and try again; evidence and charts are still available.',500:'Groq is temporarily unavailable. Please try again.',502:'Groq is temporarily unavailable. Please try again.',503:'Groq is temporarily unavailable. Please try again.'}

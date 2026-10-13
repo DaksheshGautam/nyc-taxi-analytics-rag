@@ -69,7 +69,7 @@ class AnswerTests(unittest.TestCase):
     def test_rate_limit_has_actionable_message(self):
         import io
         def fake(url,payload):raise urllib.error.HTTPError(url,429,'Limited',{},io.BytesIO(b'{"error":{"code":"rate_limit_exceeded"}}'))
-        with self.assertRaisesRegex(LLMError,'wait a minute'):
+        with self.assertRaisesRegex(LLMError,'limit resets'):
             llm_answer('Busiest hour?',self.chunks,{'LLM_PROVIDER':'groq','GROQ_API_KEY':'offline-placeholder','LLM_MODEL':'openai/gpt-oss-20b'},fake)
     def test_incomplete_response_withheld(self):
         with self.assertRaises(LLMError):llm_answer('Busiest hour?',self.chunks,{'OPENAI_API_KEY':'placeholder','LLM_MODEL':'test'},lambda *a:{'status':'incomplete','output':[]})
@@ -102,3 +102,4 @@ if __name__=='__main__':
     suite=unittest.defaultTestLoader.loadTestsFromModule(__import__(__name__));result=unittest.TextTestRunner(verbosity=2).run(suite)
     (ROOT/'test_validation.json').write_text(json.dumps({'tests_run':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),'retrieval_cases':len(QUERIES),'live_llm_tested':False},indent=2))
     raise SystemExit(not result.wasSuccessful())
+

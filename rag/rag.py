@@ -85,7 +85,7 @@ Lead with the direct answer, then explain the evidence, relevant comparisons, po
 Quotes must establish the statement, not merely mention the topic. Preserve numbers and qualifiers. Do not perform unsupported arithmetic or average stored percentiles.
 Every number in a statement, including years and hours, must appear in its supporting quotes. Preserve the source's numeric notation: do not convert 18:00 to 6 PM or round counts. Copy quotes exactly from chunk text, not titles.
 Source IDs must be taken from supplied evidence. No web search, SQL execution, external knowledge or fabricated citations.
-Return the required JSON only.'''
+Return the required JSON only. The exact shape is {"status":"answered","claims":[{"statement":"An explanatory paragraph.","evidence":[{"source_id":"an ID from supplied evidence","quote":"a verbatim source excerpt"}]}]}. Each paragraph belongs in statement, and its citations belong in evidence. Do not use text, paragraph, sources, citations, or explanation as alternate field names. If unsupported use {"status":"insufficient_evidence","claims":[]}.'''
 
 SCHEMA={'type':'object','properties':{
     'status':{'type':'string','enum':['answered','insufficient_evidence']},

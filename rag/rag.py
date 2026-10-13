@@ -81,6 +81,7 @@ Keep historical published counts separate from operational 2025 trips and fare-e
 Do not invent reasons, forecasts, profits, driver earnings, savings, unmet demand or current figures. Negative money is not proven to be refunds; code 0 is Flex Fare.
 Do not extrapolate beyond the October 2026 snapshot or combine conflicting populations. If evidence is insufficient, return insufficient_evidence and no claims.
 For an answered result, supply 1-5 brief statements, each with 1-3 evidence references and a verbatim supporting quote from each referenced chunk.
+Prefer 1-3 plain-language statements based on the FAQ and report. Avoid dataset field lists. When possible, use a supported source sentence directly as the statement. Do not add a year or convert units unless the quote includes that year or unit.
 Quotes must establish the statement, not merely mention the topic. Preserve numbers and qualifiers. Do not perform unsupported arithmetic or average stored percentiles.
 Every number in a statement, including years and hours, must appear in its supporting quotes. Preserve the source's numeric notation: do not convert 18:00 to 6 PM or round counts. Copy quotes exactly from chunk text, not titles.
 Source IDs must be taken from supplied evidence. No web search, SQL execution, external knowledge or fabricated citations.

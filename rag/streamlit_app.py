@@ -71,7 +71,7 @@ if submitted:
                 try:
                     with st.spinner('Checking an answer against retrieved evidence…'):result=llm_answer(question,chunks,llm)
                     st.session_state['result']={'claims':result['claims'],'sources':chunks,'message':'No supported answer was established.' if result['status']=='insufficient_evidence' else 'Review the supporting quotes before relying on this answer.'}
-                except GroundingError:st.session_state['result']={'claims':[],'sources':chunks,'message':'The generated answer failed grounding checks and was withheld.'}
+                except GroundingError as e:st.session_state['result']={'claims':[],'sources':chunks,'message':'The generated answer failed grounding checks and was withheld. '+str(e)}
                 except LLMError as e:st.session_state['result']={'claims':[],'sources':chunks,'message':str(e)}
         else:st.session_state['result']={'claims':[],'sources':chunks,'message':'Retrieved excerpts only — no LLM-generated answer.'}
 if submitted and 'result' in st.session_state and st.session_state['result'] is not previous_result:

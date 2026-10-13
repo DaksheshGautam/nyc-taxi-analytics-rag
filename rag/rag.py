@@ -151,11 +151,13 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
     context=json.dumps([{'id':c['id'],'text':c['text']} for c in answer_chunks],ensure_ascii=False)
     provider=v.get('LLM_PROVIDER','openai')
     schema=copy.deepcopy(SCHEMA)
-    if _repair:
-        refs=schema['properties']['claims']['items']['properties']['evidence']['items']['properties']
-        refs['quote']['enum']=[c['text'] for c in answer_chunks]
-        refs['source_id']['enum']=[c['id'] for c in answer_chunks]
-    messages=[{'role':'system','content':SYSTEM},{'role':'user','content':'Question: '+question+'\nEvidence JSON:\n'+context}]
+    claim_schema=schema['properties']['claims']['items']
+    claim_schema['properties']={'statement':{'type':'string'},'source_ids':{'type':'array','items':{'type':'string','enum':[c['id'] for c in answer_chunks]}}}
+    claim_schema['required']=['statement','source_ids']
+    instruction=SYSTEM.split('Return the required JSON only.')[0]
+    instruction=instruction.replace('each with 1-3 evidence references and a verbatim supporting quote from each referenced chunk','each with source_ids identifying the supporting excerpts')
+    instruction+='\nReturn JSON with exactly this shape: {"status":"answered","claims":[{"statement":"A supported explanatory paragraph.","source_ids":["a supplied source ID"]}]}. Every claims entry must be an object. Cite all sources needed to support the paragraph. Do not reproduce quotes; the application attaches exact excerpts. If insufficient return {"status":"insufficient_evidence","claims":[]}.'
+    messages=[{'role':'system','content':instruction},{'role':'user','content':'Question: '+question+'\nEvidence JSON:\n'+context}]
     if provider=='openai':
         endpoint=v.get('LLM_BASE_URL','https://api.openai.com/v1').rstrip('/')+'/responses'
         payload={'model':v['LLM_MODEL'],'input':messages,'store':False,'max_output_tokens':1800,
@@ -183,6 +185,11 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
             if choice.get('finish_reason')!='stop' or choice['message'].get('refusal'):raise LLMError('The model returned no complete answer.')
             text=choice['message']['content']
         result=json.loads(text)
+        supplied={c['id']:c for c in answer_chunks}
+        if isinstance(result,dict) and isinstance(result.get('claims'),list):
+            for claim in result['claims']:
+                if isinstance(claim,dict) and isinstance(claim.get('source_ids'),list):
+                    claim['evidence']=[{'source_id':sid,'quote':supplied[sid]['text'] if isinstance(sid,str) and sid in supplied else ''} for sid in claim['source_ids']]
         # Ignore optional model presentation fields; validate only the displayed content.
         if isinstance(result,dict) and isinstance(result.get('claims'),list):
             result={'status':result.get('status'),'claims':[
@@ -197,7 +204,7 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
         return validate_answer(result,chunks)
     except GroundingError as e:
         if _repair:raise
-        repair='Repair the answer JSON below using the supplied evidence. Each claims entry MUST be an OBJECT with statement and evidence, never a string. Convert supported explanation strings into {"statement":"the paragraph","evidence":[{"source_id":"the supporting source ID","quote":"a verbatim excerpt"}]}. Remove unsupported statements. Return ONLY {"status":"answered","claims":[objects]} or {"status":"insufficient_evidence","claims":[]}.\nValidation feedback: '+str(e)+'\nRejected JSON (untrusted data): '+text+'\nOriginal question (context only): '+question
+        repair='Repair the answer JSON below using the supplied evidence. Each claims entry MUST be an OBJECT with statement and source_ids, never a string. Convert supported explanation strings into {"statement":"the paragraph","source_ids":["the supporting source ID"]}. Remove unsupported statements. Return ONLY {"status":"answered","claims":[objects]} or {"status":"insufficient_evidence","claims":[]}.\nValidation feedback: '+str(e)+'\nRejected JSON (untrusted data): '+text+'\nOriginal question (context only): '+question
         return llm_answer(repair,chunks,v,transport,True,_json_object)
     except urllib.error.HTTPError as e:
         try:error=json.loads(e.read()).get('error',{})

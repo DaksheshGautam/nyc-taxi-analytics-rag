@@ -48,14 +48,21 @@ class AnswerTests(unittest.TestCase):
             self.assertEqual(url,'https://api.groq.com/openai/v1/chat/completions')
             self.assertEqual(payload['model'],'openai/gpt-oss-20b')
             self.assertTrue(payload['response_format']['json_schema']['strict'])
-            refs=payload['response_format']['json_schema']['schema']['properties']['claims']['items']['properties']['evidence']['items']['properties']
-            self.assertEqual(refs['source_id']['type'],'string')
+            refs=payload['response_format']['json_schema']['schema']['properties']['claims']['items']['properties']['source_ids']['items']
+            self.assertEqual(refs['enum'],['fact-peak-hour'])
             self.assertIn('fact-peak-hour',payload['messages'][1]['content'])
             return {'choices':[{'finish_reason':'stop','message':{'content':json.dumps(self.result)}}]}
         self.assertEqual(llm_answer('Busiest hour?',self.chunks,{'LLM_PROVIDER':'groq','GROQ_API_KEY':'offline-placeholder','LLM_MODEL':'openai/gpt-oss-20b'},fake),self.result)
     def test_openai_key_does_not_activate_groq(self):
         from rag import readiness
         self.assertFalse(readiness({'LLM_PROVIDER':'groq','OPENAI_API_KEY':'offline-placeholder','LLM_MODEL':'test'}))
+    def test_source_ids_attach_exact_evidence(self):
+        answer={'status':'answered','claims':[{'statement':self.result['claims'][0]['statement'],'source_ids':['fact-peak-hour']}]}
+        def fake(*args):return {'choices':[{'finish_reason':'stop','message':{'content':json.dumps(answer)}}]}
+        actual=llm_answer('Busiest hour?',self.chunks,{'LLM_PROVIDER':'groq','GROQ_API_KEY':'offline-placeholder','LLM_MODEL':'openai/gpt-oss-20b'},fake)
+        self.assertEqual(actual['claims'][0]['evidence'][0]['quote'],self.chunks[0]['text'])
+        answer['claims'][0]['statement']='There were 999999999 trips.'
+        with self.assertRaises(GroundingError):llm_answer('Busiest hour?',self.chunks,{'LLM_PROVIDER':'groq','GROQ_API_KEY':'offline-placeholder','LLM_MODEL':'openai/gpt-oss-20b'},fake)
     def test_groq_schema_failure_retried_and_validated(self):
         import io
         calls=[]

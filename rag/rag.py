@@ -82,6 +82,7 @@ Do not invent reasons, forecasts, profits, driver earnings, savings, unmet deman
 Do not extrapolate beyond the October 2026 snapshot or combine conflicting populations. If evidence is insufficient, return insufficient_evidence and no claims.
 For an answered result, supply 1-5 brief statements, each with 1-3 evidence references and a verbatim supporting quote from each referenced chunk.
 Quotes must establish the statement, not merely mention the topic. Preserve numbers and qualifiers. Do not perform unsupported arithmetic or average stored percentiles.
+Every number in a statement, including years and hours, must appear in its supporting quotes. Preserve the source's numeric notation: do not convert 18:00 to 6 PM or round counts. Copy quotes exactly from chunk text, not titles.
 Source IDs must be taken from supplied evidence. No web search, SQL execution, external knowledge or fabricated citations.
 Return the required JSON only.'''
 
@@ -136,7 +137,7 @@ def response_text(data):
     if not texts:raise LLMError('The model returned no usable answer.')
     return ''.join(texts)
 
-def llm_answer(question,chunks,values=None,transport=None):
+def llm_answer(question,chunks,values=None,transport=None,_repair=False):
     v=values if values is not None else config()
     if not readiness(v):raise LLMError('LLM setup is pending. Evidence search works without a key.')
     context=json.dumps([{'id':c['id'],'title':c['title'],'source':c['source'],'page':c.get('page'),'text':c['text']} for c in chunks],ensure_ascii=False)
@@ -165,7 +166,9 @@ def llm_answer(question,chunks,values=None,transport=None):
             if choice.get('finish_reason')!='stop' or choice['message'].get('refusal'):raise LLMError('The model returned no complete answer.')
             text=choice['message']['content']
         return validate_answer(json.loads(text),chunks)
-    except GroundingError:raise
+    except GroundingError as e:
+        if _repair:raise
+        return llm_answer(question+'\nValidation feedback: '+str(e)+' Regenerate once using exact source quotes and only numeric notation present in those quotes. If unsupported, return insufficient_evidence.',chunks,v,transport,True)
     except urllib.error.HTTPError as e:
         codes={401:'The LLM key was rejected.',403:'The provider denied this request. Check project and model permissions.',429:'The provider rate or quota limit was reached.'}
         if e.code==403:

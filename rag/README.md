@@ -57,3 +57,8 @@ The Streamlit entrypoint is `streamlit_app.py`; it reads verified evidence from 
 The Streamlit explorer runs parameterized SELECT queries over five compatible table grains (2,254,686 groups). Users select a date range and available dimensions; selected results are added to the next evidence question with their scope. This is a filtered query interface, not an unrestricted natural-language SQL agent. Monthly views use whole source months. Daily views use pickup date, including the drop-off view. Unsupported intersections require the local raw records. Combined means use summed numerators and denominators, never averages of group means or percentiles.
 
 The verified Neon tables and indexes occupy 416,833,536 bytes. All five annual operational and fare-eligible totals reconcile. Nineteen migrated result queries reconcile to retained originals; original MariaDB division rounding is allowed within 0.000051. The raw trip analysis SQL is PostgreSQL-compatible and semantically planned, but raw records remain local and those raw queries were not rerun in Neon.
+
+
+## Live verification
+
+On 13 October 2026, the deployed Groq adapter returned a busiest-hour answer with exact supporting quotes from the FAQ, report page 6 and hourly results. Invalid generated answers were withheld by grounding checks. This verifies that test question, not every possible answer. See live_llm_validation.json.

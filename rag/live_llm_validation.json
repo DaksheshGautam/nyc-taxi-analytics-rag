@@ -1,0 +1,14 @@
+{
+  "provider": "Groq",
+  "model": "openai/gpt-oss-20b",
+  "live_llm_tested": true,
+  "busiest_hour_answer_grounded": true,
+  "supporting_sources": [
+    "Verified_Evidence_FAQ.md",
+    "Analysis_Report.pdf page 6",
+    "data/hourly_dashboard_2025.csv"
+  ],
+  "invalid_answer_withheld_observed": true,
+  "interface_palette_verified": true,
+  "verified_date": "2026-10-13"
+}

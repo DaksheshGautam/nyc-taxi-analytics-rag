@@ -10,5 +10,8 @@
   ],
   "invalid_answer_withheld_observed": true,
   "interface_palette_verified": true,
-  "verified_date": "2026-10-13"
+  "verified_date": "2026-10-13",
+  "zone_balance_answer_and_chart_verified": true,
+  "groq_http_429_observed": true,
+  "source_constrained_cleaning_retest": "Blocked by provider HTTP 429; not verified"
 }

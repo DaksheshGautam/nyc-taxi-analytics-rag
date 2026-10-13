@@ -1,0 +1,1698 @@
+[
+  {
+    "month": "2009-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-01.parquet",
+    "bytes": 469759995,
+    "raw_rows": 14092413,
+    "schema": "vendor_name: string\nTrip_Pickup_DateTime: string\nTrip_Dropoff_DateTime: string\nPassenger_Count: int64\nTrip_Distance: double\nStart_Lon: double\nStart_Lat: double\nRate_Code: double\nstore_and_forward: double\nEnd_Lon: double\nEnd_Lat: double\nPayment_Type: string\nFare_Amt: double\nsurcharge: double\nmta_tax: double\nTip_Amt: double\nTolls_Amt: double\nTotal_Amt: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2473",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2009-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-02.parquet",
+    "bytes": 443434087,
+    "raw_rows": 13380122,
+    "schema": "vendor_name: string\nTrip_Pickup_DateTime: string\nTrip_Dropoff_DateTime: string\nPassenger_Count: int64\nTrip_Distance: double\nStart_Lon: double\nStart_Lat: double\nRate_Code: double\nstore_and_forward: double\nEnd_Lon: double\nEnd_Lat: double\nPayment_Type: string\nFare_Amt: double\nsurcharge: double\nmta_tax: double\nTip_Amt: double\nTolls_Amt: double\nTotal_Amt: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2473",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2009-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-03.parquet",
+    "bytes": 482592227,
+    "raw_rows": 14387371,
+    "schema": "vendor_name: string\nTrip_Pickup_DateTime: string\nTrip_Dropoff_DateTime: string\nPassenger_Count: int64\nTrip_Distance: double\nStart_Lon: double\nStart_Lat: double\nRate_Code: double\nstore_and_forward: double\nEnd_Lon: double\nEnd_Lat: double\nPayment_Type: string\nFare_Amt: double\nsurcharge: double\nmta_tax: double\nTip_Amt: double\nTolls_Amt: double\nTotal_Amt: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2473",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2009-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-04.parquet",
+    "bytes": 478134464,
+    "raw_rows": 14294783,
+    "schema": "vendor_name: string\nTrip_Pickup_DateTime: string\nTrip_Dropoff_DateTime: string\nPassenger_Count: int64\nTrip_Distance: double\nStart_Lon: double\nStart_Lat: double\nRate_Code: double\nstore_and_forward: double\nEnd_Lon: double\nEnd_Lat: double\nPayment_Type: string\nFare_Amt: double\nsurcharge: double\nmta_tax: double\nTip_Amt: double\nTolls_Amt: double\nTotal_Amt: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2473",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2009-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-05.parquet",
+    "bytes": 495321625,
+    "raw_rows": 14796313,
+    "schema": "vendor_name: string\nTrip_Pickup_DateTime: string\nTrip_Dropoff_DateTime: string\nPassenger_Count: int64\nTrip_Distance: double\nStart_Lon: double\nStart_Lat: double\nRate_Code: double\nstore_and_forward: double\nEnd_Lon: double\nEnd_Lat: double\nPayment_Type: string\nFare_Amt: double\nsurcharge: double\nmta_tax: double\nTip_Amt: double\nTolls_Amt: double\nTotal_Amt: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2473",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2009-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-06.parquet",
+    "bytes": 473587848,
+    "raw_rows": 14184249,
+    "schema": "vendor_name: string\nTrip_Pickup_DateTime: string\nTrip_Dropoff_DateTime: string\nPassenger_Count: int64\nTrip_Distance: double\nStart_Lon: double\nStart_Lat: double\nRate_Code: double\nstore_and_forward: double\nEnd_Lon: double\nEnd_Lat: double\nPayment_Type: string\nFare_Amt: double\nsurcharge: double\nmta_tax: double\nTip_Amt: double\nTolls_Amt: double\nTotal_Amt: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2473",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2009-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-07.parquet",
+    "bytes": 454608768,
+    "raw_rows": 13626103,
+    "schema": "vendor_name: string\nTrip_Pickup_DateTime: string\nTrip_Dropoff_DateTime: string\nPassenger_Count: int64\nTrip_Distance: double\nStart_Lon: double\nStart_Lat: double\nRate_Code: double\nstore_and_forward: double\nEnd_Lon: double\nEnd_Lat: double\nPayment_Type: string\nFare_Amt: double\nsurcharge: double\nmta_tax: double\nTip_Amt: double\nTolls_Amt: double\nTotal_Amt: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2473",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2009-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-08.parquet",
+    "bytes": 458271722,
+    "raw_rows": 13686520,
+    "schema": "vendor_name: string\nTrip_Pickup_DateTime: string\nTrip_Dropoff_DateTime: string\nPassenger_Count: int64\nTrip_Distance: double\nStart_Lon: double\nStart_Lat: double\nRate_Code: double\nstore_and_forward: double\nEnd_Lon: double\nEnd_Lat: double\nPayment_Type: string\nFare_Amt: double\nsurcharge: double\nmta_tax: double\nTip_Amt: double\nTolls_Amt: double\nTotal_Amt: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2473",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2009-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-09.parquet",
+    "bytes": 468346719,
+    "raw_rows": 13984887,
+    "schema": "vendor_name: string\nTrip_Pickup_DateTime: string\nTrip_Dropoff_DateTime: string\nPassenger_Count: int64\nTrip_Distance: double\nStart_Lon: double\nStart_Lat: double\nRate_Code: double\nstore_and_forward: double\nEnd_Lon: double\nEnd_Lat: double\nPayment_Type: string\nFare_Amt: double\nsurcharge: double\nmta_tax: double\nTip_Amt: double\nTolls_Amt: double\nTotal_Amt: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2473",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2009-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-10.parquet",
+    "bytes": 527529176,
+    "raw_rows": 15604551,
+    "schema": "vendor_name: string\nTrip_Pickup_DateTime: string\nTrip_Dropoff_DateTime: string\nPassenger_Count: int64\nTrip_Distance: double\nStart_Lon: double\nStart_Lat: double\nRate_Code: double\nstore_and_forward: double\nEnd_Lon: double\nEnd_Lat: double\nPayment_Type: string\nFare_Amt: double\nsurcharge: double\nmta_tax: double\nTip_Amt: double\nTolls_Amt: double\nTotal_Amt: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2473",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2009-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-11.parquet",
+    "bytes": 478304085,
+    "raw_rows": 14275339,
+    "schema": "vendor_name: string\nTrip_Pickup_DateTime: string\nTrip_Dropoff_DateTime: string\nPassenger_Count: int64\nTrip_Distance: double\nStart_Lon: double\nStart_Lat: double\nRate_Code: double\nstore_and_forward: double\nEnd_Lon: double\nEnd_Lat: double\nPayment_Type: string\nFare_Amt: double\nsurcharge: double\nmta_tax: double\nTip_Amt: double\nTolls_Amt: double\nTotal_Amt: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2473",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2009-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-12.parquet",
+    "bytes": 487584891,
+    "raw_rows": 14583404,
+    "schema": "vendor_name: string\nTrip_Pickup_DateTime: string\nTrip_Dropoff_DateTime: string\nPassenger_Count: int64\nTrip_Distance: double\nStart_Lon: double\nStart_Lat: double\nRate_Code: double\nstore_and_forward: double\nEnd_Lon: double\nEnd_Lat: double\nPayment_Type: string\nFare_Amt: double\nsurcharge: double\nmta_tax: double\nTip_Amt: double\nTolls_Amt: double\nTotal_Amt: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2473",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2010-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2010-01.parquet",
+    "bytes": 515402953,
+    "raw_rows": 14863778,
+    "schema": "vendor_id: string\npickup_datetime: string\ndropoff_datetime: string\npassenger_count: int64\ntrip_distance: double\npickup_longitude: double\npickup_latitude: double\nrate_code: string\nstore_and_fwd_flag: string\ndropoff_longitude: double\ndropoff_latitude: double\npayment_type: string\nfare_amount: double\nsurcharge: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\ntotal_amount: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2537",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2010-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2010-02.parquet",
+    "bytes": 358719659,
+    "raw_rows": 11145409,
+    "schema": "vendor_id: string\npickup_datetime: string\ndropoff_datetime: string\npassenger_count: int64\ntrip_distance: double\npickup_longitude: double\npickup_latitude: double\nrate_code: int64\nstore_and_fwd_flag: string\ndropoff_longitude: double\ndropoff_latitude: double\npayment_type: string\nfare_amount: double\nsurcharge: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\ntotal_amount: double\n__index_level_0__: int64\n-- schema metadata --\npandas: '{\"index_columns\": [\"__index_level_0__\"], \"column_indexes\": [{\"na' + 2597",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2010-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2010-03.parquet",
+    "bytes": 408716092,
+    "raw_rows": 12884362,
+    "schema": "vendor_id: string\npickup_datetime: string\ndropoff_datetime: string\npassenger_count: int64\ntrip_distance: double\npickup_longitude: double\npickup_latitude: double\nrate_code: int64\nstore_and_fwd_flag: string\ndropoff_longitude: double\ndropoff_latitude: double\npayment_type: string\nfare_amount: double\nsurcharge: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\ntotal_amount: double\n__index_level_0__: int64\n-- schema metadata --\npandas: '{\"index_columns\": [\"__index_level_0__\"], \"column_indexes\": [{\"na' + 2597",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2010-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2010-04.parquet",
+    "bytes": 528303971,
+    "raw_rows": 15144990,
+    "schema": "vendor_id: string\npickup_datetime: string\ndropoff_datetime: string\npassenger_count: int64\ntrip_distance: double\npickup_longitude: double\npickup_latitude: double\nrate_code: string\nstore_and_fwd_flag: string\ndropoff_longitude: double\ndropoff_latitude: double\npayment_type: string\nfare_amount: double\nsurcharge: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\ntotal_amount: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2537",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2010-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2010-05.parquet",
+    "bytes": 541788582,
+    "raw_rows": 15481351,
+    "schema": "vendor_id: string\npickup_datetime: string\ndropoff_datetime: string\npassenger_count: int64\ntrip_distance: double\npickup_longitude: double\npickup_latitude: double\nrate_code: string\nstore_and_fwd_flag: string\ndropoff_longitude: double\ndropoff_latitude: double\npayment_type: string\nfare_amount: double\nsurcharge: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\ntotal_amount: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2537",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2010-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2010-06.parquet",
+    "bytes": 517519630,
+    "raw_rows": 14825128,
+    "schema": "vendor_id: string\npickup_datetime: string\ndropoff_datetime: string\npassenger_count: int64\ntrip_distance: double\npickup_longitude: double\npickup_latitude: double\nrate_code: string\nstore_and_fwd_flag: string\ndropoff_longitude: double\ndropoff_latitude: double\npayment_type: string\nfare_amount: double\nsurcharge: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\ntotal_amount: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2537",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2010-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2010-07.parquet",
+    "bytes": 510991218,
+    "raw_rows": 14656519,
+    "schema": "vendor_id: string\npickup_datetime: string\ndropoff_datetime: string\npassenger_count: int64\ntrip_distance: double\npickup_longitude: double\npickup_latitude: double\nrate_code: string\nstore_and_fwd_flag: string\ndropoff_longitude: double\ndropoff_latitude: double\npayment_type: string\nfare_amount: double\nsurcharge: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\ntotal_amount: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2537",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2010-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2010-08.parquet",
+    "bytes": 397142288,
+    "raw_rows": 12528177,
+    "schema": "vendor_id: string\npickup_datetime: string\ndropoff_datetime: string\npassenger_count: int64\ntrip_distance: double\npickup_longitude: double\npickup_latitude: double\nrate_code: string\nstore_and_fwd_flag: string\ndropoff_longitude: double\ndropoff_latitude: double\npayment_type: string\nfare_amount: double\nsurcharge: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\ntotal_amount: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2537",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2010-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2010-09.parquet",
+    "bytes": 508197930,
+    "raw_rows": 15540209,
+    "schema": "vendor_id: string\npickup_datetime: string\ndropoff_datetime: string\npassenger_count: int64\ntrip_distance: double\npickup_longitude: double\npickup_latitude: double\nrate_code: string\nstore_and_fwd_flag: string\ndropoff_longitude: double\ndropoff_latitude: double\npayment_type: string\nfare_amount: double\nsurcharge: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\ntotal_amount: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2537",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2010-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2010-10.parquet",
+    "bytes": 474631312,
+    "raw_rows": 14199607,
+    "schema": "vendor_id: string\npickup_datetime: string\ndropoff_datetime: string\npassenger_count: int64\ntrip_distance: double\npickup_longitude: double\npickup_latitude: double\nrate_code: string\nstore_and_fwd_flag: string\ndropoff_longitude: double\ndropoff_latitude: double\npayment_type: string\nfare_amount: double\nsurcharge: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\ntotal_amount: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2537",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2010-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2010-11.parquet",
+    "bytes": 448400565,
+    "raw_rows": 13912310,
+    "schema": "vendor_id: string\npickup_datetime: string\ndropoff_datetime: string\npassenger_count: int64\ntrip_distance: double\npickup_longitude: double\npickup_latitude: double\nrate_code: string\nstore_and_fwd_flag: string\ndropoff_longitude: double\ndropoff_latitude: double\npayment_type: string\nfare_amount: double\nsurcharge: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\ntotal_amount: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2537",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2010-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2010-12.parquet",
+    "bytes": 444704733,
+    "raw_rows": 13819322,
+    "schema": "vendor_id: string\npickup_datetime: string\ndropoff_datetime: string\npassenger_count: int64\ntrip_distance: double\npickup_longitude: double\npickup_latitude: double\nrate_code: string\nstore_and_fwd_flag: string\ndropoff_longitude: double\ndropoff_latitude: double\npayment_type: string\nfare_amount: double\nsurcharge: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\ntotal_amount: double\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2537",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2011-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2011-01.parquet",
+    "bytes": 167179830,
+    "raw_rows": 13464997,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2484",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2011-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2011-02.parquet",
+    "bytes": 175980833,
+    "raw_rows": 14202809,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2011-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2011-03.parquet",
+    "bytes": 199932870,
+    "raw_rows": 16066351,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2481",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2011-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2011-04.parquet",
+    "bytes": 184195235,
+    "raw_rows": 14718973,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2011-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2011-05.parquet",
+    "bytes": 193432650,
+    "raw_rows": 15554868,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2011-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2011-06.parquet",
+    "bytes": 189119923,
+    "raw_rows": 15097861,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2011-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2011-07.parquet",
+    "bytes": 184027650,
+    "raw_rows": 14742561,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2011-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2011-08.parquet",
+    "bytes": 166214848,
+    "raw_rows": 13262441,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2011-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2011-09.parquet",
+    "bytes": 183493192,
+    "raw_rows": 14626748,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2011-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2011-10.parquet",
+    "bytes": 196273077,
+    "raw_rows": 15697804,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2011-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2011-11.parquet",
+    "bytes": 181862379,
+    "raw_rows": 14525863,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2011-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2011-12.parquet",
+    "bytes": 186508736,
+    "raw_rows": 14925983,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2012-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2012-01.parquet",
+    "bytes": 166778702,
+    "raw_rows": 13058348,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2012-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2012-02.parquet",
+    "bytes": 170999814,
+    "raw_rows": 13361345,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2012-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2012-03.parquet",
+    "bytes": 204978557,
+    "raw_rows": 16146923,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2012-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2012-04.parquet",
+    "bytes": 174197742,
+    "raw_rows": 13427802,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2012-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2012-05.parquet",
+    "bytes": 181030635,
+    "raw_rows": 13965253,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2012-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2012-06.parquet",
+    "bytes": 193509508,
+    "raw_rows": 15096468,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2012-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2012-07.parquet",
+    "bytes": 183935553,
+    "raw_rows": 14379307,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2012-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2012-08.parquet",
+    "bytes": 184507061,
+    "raw_rows": 14381752,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2012-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2012-09.parquet",
+    "bytes": 187245283,
+    "raw_rows": 14546854,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2012-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2012-10.parquet",
+    "bytes": 181506517,
+    "raw_rows": 14522315,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2012-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2012-11.parquet",
+    "bytes": 172489795,
+    "raw_rows": 13776030,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2012-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2012-12.parquet",
+    "bytes": 182600871,
+    "raw_rows": 14696610,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2481",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2013-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2013-01.parquet",
+    "bytes": 184736650,
+    "raw_rows": 14776617,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2013-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2013-02.parquet",
+    "bytes": 172505462,
+    "raw_rows": 13990176,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2013-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2013-03.parquet",
+    "bytes": 195313202,
+    "raw_rows": 15749228,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2013-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2013-04.parquet",
+    "bytes": 180221055,
+    "raw_rows": 14652628,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2013-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2013-05.parquet",
+    "bytes": 190682031,
+    "raw_rows": 15285052,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2481",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2013-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2013-06.parquet",
+    "bytes": 179544093,
+    "raw_rows": 14385456,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2013-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2013-07.parquet",
+    "bytes": 173531868,
+    "raw_rows": 13823840,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2013-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2013-08.parquet",
+    "bytes": 148172545,
+    "raw_rows": 11681525,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2013-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2013-09.parquet",
+    "bytes": 176839524,
+    "raw_rows": 14107693,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2013-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2013-10.parquet",
+    "bytes": 188241576,
+    "raw_rows": 15004556,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2013-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2013-11.parquet",
+    "bytes": 179235590,
+    "raw_rows": 14388451,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2013-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2013-12.parquet",
+    "bytes": 174890659,
+    "raw_rows": 13971118,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2014-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-01.parquet",
+    "bytes": 171982098,
+    "raw_rows": 13782517,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2481",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2014-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-02.parquet",
+    "bytes": 162202347,
+    "raw_rows": 13063794,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2014-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-03.parquet",
+    "bytes": 192434692,
+    "raw_rows": 15428134,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2014-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-04.parquet",
+    "bytes": 183195017,
+    "raw_rows": 14618759,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2014-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-05.parquet",
+    "bytes": 186694423,
+    "raw_rows": 14774048,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2014-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-06.parquet",
+    "bytes": 173833877,
+    "raw_rows": 13813079,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2014-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-07.parquet",
+    "bytes": 165108601,
+    "raw_rows": 13104273,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2014-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-08.parquet",
+    "bytes": 173192581,
+    "raw_rows": 12698743,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: null\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2475",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2014-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-09.parquet",
+    "bytes": 183853413,
+    "raw_rows": 13424350,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2014-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-10.parquet",
+    "bytes": 195654699,
+    "raw_rows": 14317774,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2014-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-11.parquet",
+    "bytes": 181091341,
+    "raw_rows": 13309991,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2014-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-12.parquet",
+    "bytes": 179003886,
+    "raw_rows": 13112117,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2015-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-01.parquet",
+    "bytes": 175325767,
+    "raw_rows": 12741035,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2015-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-02.parquet",
+    "bytes": 171639741,
+    "raw_rows": 12442394,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2015-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-03.parquet",
+    "bytes": 185355459,
+    "raw_rows": 13342951,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2015-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-04.parquet",
+    "bytes": 180491380,
+    "raw_rows": 13063758,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2015-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-05.parquet",
+    "bytes": 182487456,
+    "raw_rows": 13157677,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2015-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-06.parquet",
+    "bytes": 171760764,
+    "raw_rows": 12324936,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2015-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-07.parquet",
+    "bytes": 160689531,
+    "raw_rows": 11559666,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2015-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-08.parquet",
+    "bytes": 154240802,
+    "raw_rows": 11123123,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2015-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-09.parquet",
+    "bytes": 156401569,
+    "raw_rows": 11218122,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2015-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-10.parquet",
+    "bytes": 171091467,
+    "raw_rows": 12307333,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2015-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-11.parquet",
+    "bytes": 157669006,
+    "raw_rows": 11305240,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2015-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-12.parquet",
+    "bytes": 159905170,
+    "raw_rows": 11452996,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2016-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-01.parquet",
+    "bytes": 151251087,
+    "raw_rows": 10905067,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2016-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-02.parquet",
+    "bytes": 158113739,
+    "raw_rows": 11375412,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2016-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-03.parquet",
+    "bytes": 170019864,
+    "raw_rows": 12203824,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2016-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-04.parquet",
+    "bytes": 165552992,
+    "raw_rows": 11927996,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2016-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-05.parquet",
+    "bytes": 165807271,
+    "raw_rows": 11832049,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2016-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-06.parquet",
+    "bytes": 156288749,
+    "raw_rows": 11131645,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2016-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-07.parquet",
+    "bytes": 144621113,
+    "raw_rows": 10294080,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2016-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-08.parquet",
+    "bytes": 139875738,
+    "raw_rows": 9942263,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2016-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-09.parquet",
+    "bytes": 141848574,
+    "raw_rows": 10116018,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2016-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-10.parquet",
+    "bytes": 152579388,
+    "raw_rows": 10854626,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2016-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-11.parquet",
+    "bytes": 141148933,
+    "raw_rows": 10102128,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2016-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-12.parquet",
+    "bytes": 145957196,
+    "raw_rows": 10446697,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2017-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-01.parquet",
+    "bytes": 134830009,
+    "raw_rows": 9710820,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2017-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-02.parquet",
+    "bytes": 127643793,
+    "raw_rows": 9169775,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2017-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-03.parquet",
+    "bytes": 144578214,
+    "raw_rows": 10295441,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2017-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-04.parquet",
+    "bytes": 141349194,
+    "raw_rows": 10047135,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2017-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-05.parquet",
+    "bytes": 142379076,
+    "raw_rows": 10102127,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2017-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-06.parquet",
+    "bytes": 135482101,
+    "raw_rows": 9656993,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2017-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-07.parquet",
+    "bytes": 120841535,
+    "raw_rows": 8588486,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2017-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-08.parquet",
+    "bytes": 118622365,
+    "raw_rows": 8422153,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2017-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-09.parquet",
+    "bytes": 126899296,
+    "raw_rows": 8945421,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2017-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-10.parquet",
+    "bytes": 136742510,
+    "raw_rows": 9768672,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2017-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-11.parquet",
+    "bytes": 131062706,
+    "raw_rows": 9284803,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2017-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-12.parquet",
+    "bytes": 134255377,
+    "raw_rows": 9508501,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2018-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-01.parquet",
+    "bytes": 123668517,
+    "raw_rows": 8760687,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2484",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2018-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-02.parquet",
+    "bytes": 119455285,
+    "raw_rows": 8492819,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2018-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-03.parquet",
+    "bytes": 133552006,
+    "raw_rows": 9431289,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2018-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-04.parquet",
+    "bytes": 131609714,
+    "raw_rows": 9306216,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2018-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-05.parquet",
+    "bytes": 130850283,
+    "raw_rows": 9224788,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2478",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2018-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-06.parquet",
+    "bytes": 124189362,
+    "raw_rows": 8714667,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2481",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2018-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-07.parquet",
+    "bytes": 112244445,
+    "raw_rows": 7851143,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2486",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2018-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-08.parquet",
+    "bytes": 111426538,
+    "raw_rows": 7855040,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2486",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2018-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-09.parquet",
+    "bytes": 115505387,
+    "raw_rows": 8049094,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2018-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-10.parquet",
+    "bytes": 126899602,
+    "raw_rows": 8834520,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2486",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2018-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-11.parquet",
+    "bytes": 117170616,
+    "raw_rows": 8155449,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2018-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-12.parquet",
+    "bytes": 117845011,
+    "raw_rows": 8195675,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: null\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2486",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2019-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet",
+    "bytes": 110439634,
+    "raw_rows": 7696617,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2019-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-02.parquet",
+    "bytes": 103356025,
+    "raw_rows": 7049370,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2019-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-03.parquet",
+    "bytes": 116017372,
+    "raw_rows": 7866620,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2019-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-04.parquet",
+    "bytes": 110139137,
+    "raw_rows": 7475949,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2019-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-05.parquet",
+    "bytes": 111478943,
+    "raw_rows": 7598445,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2019-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-06.parquet",
+    "bytes": 102903344,
+    "raw_rows": 6971560,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2019-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-07.parquet",
+    "bytes": 93877343,
+    "raw_rows": 6310419,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2019-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-08.parquet",
+    "bytes": 89999675,
+    "raw_rows": 6073357,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2019-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-09.parquet",
+    "bytes": 97110325,
+    "raw_rows": 6567788,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2019-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-10.parquet",
+    "bytes": 106293373,
+    "raw_rows": 7213891,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2019-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-11.parquet",
+    "bytes": 100872983,
+    "raw_rows": 6878111,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2019-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-12.parquet",
+    "bytes": 101044777,
+    "raw_rows": 6896317,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2020-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-01.parquet",
+    "bytes": 93562858,
+    "raw_rows": 6405008,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2020-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-02.parquet",
+    "bytes": 92134881,
+    "raw_rows": 6299367,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2020-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-03.parquet",
+    "bytes": 44442590,
+    "raw_rows": 3007687,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2020-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-04.parquet",
+    "bytes": 4442620,
+    "raw_rows": 238073,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2020-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-05.parquet",
+    "bytes": 6229864,
+    "raw_rows": 348415,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2020-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-06.parquet",
+    "bytes": 9505358,
+    "raw_rows": 549797,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2020-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-07.parquet",
+    "bytes": 13387778,
+    "raw_rows": 800412,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2020-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-08.parquet",
+    "bytes": 16601463,
+    "raw_rows": 1007286,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2020-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-09.parquet",
+    "bytes": 21381938,
+    "raw_rows": 1341017,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2020-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-10.parquet",
+    "bytes": 26306876,
+    "raw_rows": 1681132,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2489",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2020-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-11.parquet",
+    "bytes": 23583368,
+    "raw_rows": 1509000,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2020-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-12.parquet",
+    "bytes": 23020036,
+    "raw_rows": 1461898,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2021-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet",
+    "bytes": 21686067,
+    "raw_rows": 1369769,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2021-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-02.parquet",
+    "bytes": 21777258,
+    "raw_rows": 1371709,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2021-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-03.parquet",
+    "bytes": 30007852,
+    "raw_rows": 1925152,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2021-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-04.parquet",
+    "bytes": 34018560,
+    "raw_rows": 2171187,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2021-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-05.parquet",
+    "bytes": 38743682,
+    "raw_rows": 2507109,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2021-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-06.parquet",
+    "bytes": 44071592,
+    "raw_rows": 2834264,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2021-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-07.parquet",
+    "bytes": 43697690,
+    "raw_rows": 2821746,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2021-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-08.parquet",
+    "bytes": 43425907,
+    "raw_rows": 2788757,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2021-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-09.parquet",
+    "bytes": 46125883,
+    "raw_rows": 2963793,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2021-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-10.parquet",
+    "bytes": 53286464,
+    "raw_rows": 3463504,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2021-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-11.parquet",
+    "bytes": 53100722,
+    "raw_rows": 3472949,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2021-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-12.parquet",
+    "bytes": 49639052,
+    "raw_rows": 3214369,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2022-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet",
+    "bytes": 38139949,
+    "raw_rows": 2463931,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2022-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-02.parquet",
+    "bytes": 45616512,
+    "raw_rows": 2979431,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2022-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-03.parquet",
+    "bytes": 55682369,
+    "raw_rows": 3627882,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2022-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-04.parquet",
+    "bytes": 55222692,
+    "raw_rows": 3599920,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2022-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-05.parquet",
+    "bytes": 55558821,
+    "raw_rows": 3588295,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2022-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-06.parquet",
+    "bytes": 55365184,
+    "raw_rows": 3558124,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2022-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-07.parquet",
+    "bytes": 49367712,
+    "raw_rows": 3174394,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2022-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-08.parquet",
+    "bytes": 49717159,
+    "raw_rows": 3152677,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2022-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-09.parquet",
+    "bytes": 49619957,
+    "raw_rows": 3183767,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2022-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-10.parquet",
+    "bytes": 57061938,
+    "raw_rows": 3675411,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2022-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-11.parquet",
+    "bytes": 50106631,
+    "raw_rows": 3252717,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2022-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-12.parquet",
+    "bytes": 53640739,
+    "raw_rows": 3399549,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2023-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-01.parquet",
+    "bytes": 47673370,
+    "raw_rows": 3066766,
+    "schema": "VendorID: int64\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2492",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2023-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-02.parquet",
+    "bytes": 47748012,
+    "raw_rows": 2913955,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2023-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-03.parquet",
+    "bytes": 56127762,
+    "raw_rows": 3403766,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2023-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-04.parquet",
+    "bytes": 54222699,
+    "raw_rows": 3288250,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2023-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-05.parquet",
+    "bytes": 58654627,
+    "raw_rows": 3513649,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2023-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-06.parquet",
+    "bytes": 54999465,
+    "raw_rows": 3307234,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2023-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-07.parquet",
+    "bytes": 48361828,
+    "raw_rows": 2907108,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2023-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-08.parquet",
+    "bytes": 48152353,
+    "raw_rows": 2824209,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2023-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-09.parquet",
+    "bytes": 47895515,
+    "raw_rows": 2846722,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2023-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-10.parquet",
+    "bytes": 59009059,
+    "raw_rows": 3522285,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2023-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-11.parquet",
+    "bytes": 56094653,
+    "raw_rows": 3339715,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2023-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-12.parquet",
+    "bytes": 56804275,
+    "raw_rows": 3376567,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2024-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet",
+    "bytes": 49961641,
+    "raw_rows": 2964624,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2024-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet",
+    "bytes": 50349284,
+    "raw_rows": 3007526,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2024-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet",
+    "bytes": 60078280,
+    "raw_rows": 3582628,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2024-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet",
+    "bytes": 59133625,
+    "raw_rows": 3514289,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2024-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet",
+    "bytes": 62553128,
+    "raw_rows": 3723833,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2024-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet",
+    "bytes": 59859922,
+    "raw_rows": 3539193,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2024-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet",
+    "bytes": 52299432,
+    "raw_rows": 3076903,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2024-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet",
+    "bytes": 51067350,
+    "raw_rows": 2979183,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2024-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-09.parquet",
+    "bytes": 61170186,
+    "raw_rows": 3633030,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2024-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet",
+    "bytes": 64346071,
+    "raw_rows": 3833771,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2024-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet",
+    "bytes": 60658709,
+    "raw_rows": 3646369,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2024-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet",
+    "bytes": 61524085,
+    "raw_rows": 3668371,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2025-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-01.parquet",
+    "bytes": 59158238,
+    "raw_rows": 3475226,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2025-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-02.parquet",
+    "bytes": 60343086,
+    "raw_rows": 3577543,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2025-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-03.parquet",
+    "bytes": 69964745,
+    "raw_rows": 4145257,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2025-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-04.parquet",
+    "bytes": 67352824,
+    "raw_rows": 3970553,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2025-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-05.parquet",
+    "bytes": 77837865,
+    "raw_rows": 4591845,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2025-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-06.parquet",
+    "bytes": 73542954,
+    "raw_rows": 4322960,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2025-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-07.parquet",
+    "bytes": 66943728,
+    "raw_rows": 3898963,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2025-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-08.parquet",
+    "bytes": 62293743,
+    "raw_rows": 3574091,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2025-09",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-09.parquet",
+    "bytes": 72432945,
+    "raw_rows": 4251015,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2025-10",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-10.parquet",
+    "bytes": 75267589,
+    "raw_rows": 4428699,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2025-11",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-11.parquet",
+    "bytes": 71134255,
+    "raw_rows": 4181444,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2025-12",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-12.parquet",
+    "bytes": 73701327,
+    "raw_rows": 4305006,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2026-01",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-01.parquet",
+    "bytes": 64165080,
+    "raw_rows": 3724889,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2026-02",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-02.parquet",
+    "bytes": 58683353,
+    "raw_rows": 3399866,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2026-03",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-03.parquet",
+    "bytes": 67891249,
+    "raw_rows": 3952451,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2026-04",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-04.parquet",
+    "bytes": 64818115,
+    "raw_rows": 3831240,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2026-05",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-05.parquet",
+    "bytes": 69699174,
+    "raw_rows": 4090836,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2026-06",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-06.parquet",
+    "bytes": 65465637,
+    "raw_rows": 3837248,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double\nrequest_source: large_string",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2026-07",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-07.parquet",
+    "bytes": 61685033,
+    "raw_rows": 3530109,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double\nrequest_source: large_string",
+    "status": "verified_footer"
+  },
+  {
+    "month": "2026-08",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-08.parquet",
+    "bytes": 59043961,
+    "raw_rows": 3336716,
+    "schema": "VendorID: int32\ntpep_pickup_datetime: timestamp[us]\ntpep_dropoff_datetime: timestamp[us]\npassenger_count: int64\ntrip_distance: double\nRatecodeID: int64\nstore_and_fwd_flag: large_string\nPULocationID: int32\nDOLocationID: int32\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nAirport_fee: double\ncbd_congestion_fee: double\nrequest_source: large_string",
+    "status": "verified_footer"
+  }
+]

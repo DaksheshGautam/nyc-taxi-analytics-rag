@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "funnel": true,
+    "operational_exclusions": true,
+    "fare_exclusions": true,
+    "hourly_operations": true,
+    "hourly_fare_n": true,
+    "hourly_fare_sum": true,
+    "endpoints": true,
+    "balance_definition": true,
+    "matching_period_change": true,
+    "filter_test_evidence": true
+  },
+  "passed": 10,
+  "total": 10,
+  "pages": 10,
+  "input_sha256": {
+    "annual_2025": "43f45babfa744eae91de51c5f7932a52f9a41c988dd218796a9aa48c7d8cde86",
+    "hourly_dashboard_2025": "97199206db508aaf5c81f4ade231cbd2a5e9807e5f295632c7353b9439a924de",
+    "historical_comparable": "36ac5df85b1da6abcd6a9418c63317ad9da18af64f069a9045589c7b4a75d323",
+    "cleaning_funnel": "2bef880dedb690cb843e3f1161f4897a8e0646ba4e809d153f94778a5f20568c",
+    "cleaning_waterfall": "6651248c82f00a746f3f50398ed9a132db77977695c00ff65a0b4da534dceb9e",
+    "zone_pickup_dropoff_2025": "53bbccfe51b626d39aacc78f33ec79cb5863d38c3b41f385c81aedc366d7dfd1",
+    "payment_diagnostics": "4044a6cd65b1f3a9348eae3d4e80e061e42e87266840dae222ffc4ca74390aaf",
+    "negative_money_patterns": "cd04fdd863beb5dc5c0aaf40a46b1802f23bc1a3dc436759d6585dc32c0ef63c",
+    "flex_negative_fare_values": "bc64cd21858f2bc9dbbc4f349e7035acd12f608905f20e2226c2192d9672e319",
+    "negative_counterpart_check": "3220e15e10150efd06cfc45892303d301ad44fc30efde783ad6a6aa7b2ecd031",
+    "jfk_within_zone_diagnostics": "bee1509bda99e6138bec4783d64cb81f5c7f629d1d4350e07fdcaf3b5799cccb",
+    "airport_only_2025": "6ca9b8cafd20664b73770aa7362479aeca5eaa1d27211233cd2fbd18fb564247"
+  },
+  "pdf_sha256": "267ea3035be5cd66e1ef112117667b53a46137755e285208d51654a9d6a119ad",
+  "scope": "Descriptive findings only; no causal effects, forecasts, projected savings or operational recommendations."
+}

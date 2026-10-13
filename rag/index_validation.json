@@ -1,0 +1,14 @@
+{
+  "sources": 49,
+  "chunks": 835,
+  "pdf_pages": 10,
+  "generated_faq_entries": 27,
+  "checks": {
+    "unique_chunk_ids": true,
+    "report_pages_indexed": true,
+    "all_source_paths_exist": true,
+    "funnel_reconciles": true,
+    "endpoint_totals_reconcile": true
+  },
+  "live_llm_tested": false
+}

@@ -1,0 +1,190 @@
+{
+  "result_queries": [
+    {
+      "query": "sql/postgresql/02_matching_month_history.sql",
+      "rows": 18,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/02_matching_month_history.csv"
+    },
+    {
+      "query": "sql/postgresql/03_2025_kpis.sql",
+      "rows": 1,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/03_2025_kpis.csv"
+    },
+    {
+      "query": "sql/postgresql/04_busiest_pickup_zones.sql",
+      "rows": 15,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/04_busiest_pickup_zones.csv"
+    },
+    {
+      "query": "sql/postgresql/05_airport_variability.sql",
+      "rows": 5,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/05_airport_variability.csv"
+    },
+    {
+      "query": "sql/postgresql/06_weekday_hour_peaks.sql",
+      "rows": 15,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/06_weekday_hour_peaks.csv"
+    },
+    {
+      "query": "sql/postgresql/07_fare_patterns.sql",
+      "rows": 7,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/07_fare_patterns.csv"
+    },
+    {
+      "query": "sql/postgresql/08_monthly_reconciliation.sql",
+      "rows": 12,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/08_monthly_reconciliation.csv"
+    },
+    {
+      "query": "sql/postgresql/09_annual_reconciliation.sql",
+      "rows": 1,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/09_annual_reconciliation.csv"
+    },
+    {
+      "query": "sql/postgresql/10_hourly_trips_and_fares.sql",
+      "rows": 24,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/10_hourly_trips_and_fares.csv"
+    },
+    {
+      "query": "sql/postgresql/11_weekday_hour_heatmap.sql",
+      "rows": 168,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/11_weekday_hour_heatmap.csv"
+    },
+    {
+      "query": "sql/postgresql/12_weekday_weekend_comparison.sql",
+      "rows": 48,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/12_weekday_weekend_comparison.csv"
+    },
+    {
+      "query": "sql/postgresql/13_zone_pickup_dropoff_balance.sql",
+      "rows": 260,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/13_zone_pickup_dropoff_balance.csv"
+    },
+    {
+      "query": "sql/postgresql/14_processing_funnel.sql",
+      "rows": 3,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/14_processing_funnel.csv"
+    },
+    {
+      "query": "sql/postgresql/15_disjoint_exclusion_reasons.sql",
+      "rows": 7,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/15_disjoint_exclusion_reasons.csv"
+    },
+    {
+      "query": "sql/postgresql/16_payment_quality_investigation.sql",
+      "rows": 6,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/16_payment_quality_investigation.csv"
+    },
+    {
+      "query": "sql/postgresql/17_negative_counterpart_check.sql",
+      "rows": 1,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/17_negative_counterpart_check.csv"
+    },
+    {
+      "query": "sql/postgresql/18_explorer_reconciliation.sql",
+      "rows": 1,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/18_explorer_reconciliation.csv"
+    },
+    {
+      "query": "sql/postgresql/19_flex_negative_fare_patterns.sql",
+      "rows": 20,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/19_flex_negative_fare_patterns.csv"
+    },
+    {
+      "query": "sql/postgresql/20_within_jfk_zone_patterns.sql",
+      "rows": 1,
+      "baseline_reconciled": true,
+      "engine": "PostgreSQL 18.6",
+      "result": "postgresql_results/20_within_jfk_zone_patterns.csv"
+    }
+  ],
+  "numeric_comparison_absolute_tolerance": 5.1e-05,
+  "tolerance_reason": "Original MariaDB division outputs rounded to four decimal places. PostgreSQL retains full precision.",
+  "trip_queries_semantically_planned": [
+    "airport_2025.sql",
+    "airport_hour_2025.sql",
+    "airport_only_2025.sql",
+    "annual_2025.sql",
+    "borough_2025.sql",
+    "cleaning_funnel.sql",
+    "cleaning_waterfall.sql",
+    "daytype_hour_2025.sql",
+    "detail_daily_dropoff_zone.sql",
+    "detail_daily_hour_payment.sql",
+    "detail_daily_hour_pickup_zone.sql",
+    "detail_monthly_route.sql",
+    "detail_monthly_zone_hour_payment.sql",
+    "fare_band_2025.sql",
+    "fare_hour_2025.sql",
+    "flex_negative_fare_values.sql",
+    "historical_comparable.sql",
+    "historical_year.sql",
+    "hour_2025.sql",
+    "hourly_dashboard_2025.sql",
+    "hourly_kpis_2025.sql",
+    "interactive_daily_2025.sql",
+    "jfk_within_zone_diagnostics.sql",
+    "monthly_2025.sql",
+    "negative_counterpart_check.sql",
+    "negative_money_patterns.sql",
+    "payment_2025.sql",
+    "payment_dashboard_2025.sql",
+    "payment_diagnostics.sql",
+    "quality_long.sql",
+    "quality_month.sql",
+    "rate_2025.sql",
+    "route_top20_2025.sql",
+    "routes_2025.sql",
+    "sensitivity_2025.sql",
+    "weekday_2025.sql",
+    "weekday_heatmap_2025.sql",
+    "weekday_hour_2025.sql",
+    "zone_2025.sql",
+    "zone_balance_top20.sql",
+    "zone_month_2025.sql",
+    "zone_pickup_dropoff_2025.sql",
+    "zone_top15_2025.sql"
+  ],
+  "all_original_results_reconciled": true,
+  "raw_trip_queries_reexecuted": false,
+  "raw_trip_queries_require_local_records": true,
+  "detail_tables": 5,
+  "parser_passed": true,
+  "groq_live_tested": false
+}

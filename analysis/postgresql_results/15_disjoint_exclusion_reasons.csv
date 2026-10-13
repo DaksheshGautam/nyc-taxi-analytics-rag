@@ -1,0 +1,8 @@
+stage,reason,records
+Fare eligibility,2 Negative fare or total charge,2853180
+Fare eligibility,3 Disputed payment (nonnegative money),577339
+Fare eligibility,5 Fare-eligible trips,44727165
+Operational exclusion,2 Pickup outside source month,214
+Operational exclusion,3 Nonpositive duration,546304
+Operational exclusion,4 Duration over 180 minutes,18400
+Operational exclusion,5 Operational trips,48157684

@@ -1,0 +1,26 @@
+{
+  "annual_checks": [
+    {
+      "grain": "Daily pickup zone and hour",
+      "annual_reconciled": true
+    },
+    {
+      "grain": "Daily hour and payment",
+      "annual_reconciled": true
+    },
+    {
+      "grain": "Daily drop-off zone",
+      "annual_reconciled": true
+    },
+    {
+      "grain": "Monthly pickup\u2013drop-off route",
+      "annual_reconciled": true
+    },
+    {
+      "grain": "Monthly pickup zone, hour and payment",
+      "annual_reconciled": true
+    }
+  ],
+  "hour18_reconciled": true,
+  "unsupported_intersection_rejected": true
+}

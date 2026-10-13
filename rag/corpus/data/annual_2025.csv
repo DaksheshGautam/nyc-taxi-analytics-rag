@@ -1,0 +1,2 @@
+report_year,trips,distance_n,median_duration_min,p90_duration_min,median_distance_mi,distance_sum_mi,fare_n,fare_sum_usd,charge_sum_usd,median_fare_usd,median_charge_usd
+2025,48157684,48155209,13.616666666666667,32.833333333333336,1.85,164246100.17014897,44727165,901301181.1590959,1294662945.5874448,14.49,22.13

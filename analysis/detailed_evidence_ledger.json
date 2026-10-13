@@ -1,0 +1,42 @@
+[
+  {
+    "table": "daily_hour_pickup_zone",
+    "rows": 1429444,
+    "csv_bytes": 173574765,
+    "gzip_bytes": 47525506,
+    "trips": 48157684,
+    "fare_n": 44727165
+  },
+  {
+    "table": "monthly_route",
+    "rows": 467678,
+    "csv_bytes": 54937726,
+    "gzip_bytes": 15887011,
+    "trips": 48157684,
+    "fare_n": 44727165
+  },
+  {
+    "table": "monthly_zone_hour_payment",
+    "rows": 221643,
+    "csv_bytes": 26389693,
+    "gzip_bytes": 7505711,
+    "trips": 48157684,
+    "fare_n": 44727165
+  },
+  {
+    "table": "daily_dropoff_zone",
+    "rows": 92171,
+    "csv_bytes": 13371223,
+    "gzip_bytes": 4217972,
+    "trips": 48157684,
+    "fare_n": 44727165
+  },
+  {
+    "table": "daily_hour_payment",
+    "rows": 43750,
+    "csv_bytes": 6058325,
+    "gzip_bytes": 1859710,
+    "trips": 48157684,
+    "fare_n": 44727165
+  }
+]

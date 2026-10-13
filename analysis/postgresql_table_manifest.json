@@ -1,0 +1,592 @@
+[
+  {
+    "table": "airport_2025",
+    "columns": [
+      "airport_group",
+      "trips",
+      "distance_n",
+      "median_duration_min",
+      "p90_duration_min",
+      "median_distance_mi",
+      "distance_sum_mi",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "median_fare_usd",
+      "median_charge_usd",
+      "jfk_rate_records",
+      "newark_rate_records"
+    ],
+    "rows": 6
+  },
+  {
+    "table": "airport_hour_2025",
+    "columns": [
+      "airport_group",
+      "hour",
+      "trips",
+      "median_duration_min",
+      "p90_duration_min"
+    ],
+    "rows": 120
+  },
+  {
+    "table": "airport_only_2025",
+    "columns": [
+      "airport_group",
+      "trips",
+      "distance_n",
+      "median_duration_min",
+      "p90_duration_min",
+      "median_distance_mi",
+      "distance_sum_mi",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "median_fare_usd",
+      "median_charge_usd",
+      "jfk_rate_records",
+      "newark_rate_records"
+    ],
+    "rows": 5
+  },
+  {
+    "table": "annual_2025",
+    "columns": [
+      "report_year",
+      "trips",
+      "distance_n",
+      "median_duration_min",
+      "p90_duration_min",
+      "median_distance_mi",
+      "distance_sum_mi",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "median_fare_usd",
+      "median_charge_usd"
+    ],
+    "rows": 1
+  },
+  {
+    "table": "borough_2025",
+    "columns": [
+      "borough",
+      "trips",
+      "pickup_share"
+    ],
+    "rows": 8
+  },
+  {
+    "table": "cleaning_funnel",
+    "columns": [
+      "stage_no",
+      "stage",
+      "records",
+      "removed_to_next"
+    ],
+    "rows": 3
+  },
+  {
+    "table": "cleaning_waterfall",
+    "columns": [
+      "stage",
+      "reason",
+      "records"
+    ],
+    "rows": 7
+  },
+  {
+    "table": "daytype_hour_2025",
+    "columns": [
+      "day_type",
+      "hour",
+      "trips",
+      "fare_n",
+      "fare_sum_usd",
+      "calendar_days",
+      "avg_daily_trips",
+      "mean_fare_usd"
+    ],
+    "rows": 48
+  },
+  {
+    "table": "fare_band_2025",
+    "columns": [
+      "distance_band",
+      "trips",
+      "distance_n",
+      "median_duration_min",
+      "p90_duration_min",
+      "median_distance_mi",
+      "distance_sum_mi",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "median_fare_usd",
+      "median_charge_usd"
+    ],
+    "rows": 7
+  },
+  {
+    "table": "fare_hour_2025",
+    "columns": [
+      "hour",
+      "trips",
+      "distance_n",
+      "median_duration_min",
+      "p90_duration_min",
+      "median_distance_mi",
+      "distance_sum_mi",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "median_fare_usd",
+      "median_charge_usd"
+    ],
+    "rows": 24
+  },
+  {
+    "table": "flex_negative_fare_values",
+    "columns": [
+      "fare_usd",
+      "records",
+      "operational_trips",
+      "median_charge_usd",
+      "minimum_charge_usd",
+      "maximum_charge_usd"
+    ],
+    "rows": 20
+  },
+  {
+    "table": "historical_comparable",
+    "columns": [
+      "year",
+      "jan_aug_records",
+      "records_per_day",
+      "yoy_pct"
+    ],
+    "rows": 18
+  },
+  {
+    "table": "historical_month",
+    "columns": [
+      "source_month",
+      "year",
+      "month",
+      "month_name",
+      "raw_records",
+      "compressed_bytes",
+      "period_status",
+      "count_definition"
+    ],
+    "rows": 212
+  },
+  {
+    "table": "historical_year",
+    "columns": [
+      "year",
+      "months_available",
+      "raw_records",
+      "compressed_bytes",
+      "period_status"
+    ],
+    "rows": 18
+  },
+  {
+    "table": "hour_2025",
+    "columns": [
+      "hour",
+      "trips"
+    ],
+    "rows": 24
+  },
+  {
+    "table": "hourly_dashboard_2025",
+    "columns": [
+      "hour",
+      "trips",
+      "distance_n",
+      "median_duration_min",
+      "p90_duration_min",
+      "median_distance_mi",
+      "distance_sum_mi",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "median_fare_usd",
+      "median_charge_usd",
+      "avg_daily_trips",
+      "avg_daily_fare_usd",
+      "avg_daily_charge_usd",
+      "mean_fare_usd",
+      "mean_charge_usd",
+      "mean_distance_mi",
+      "trip_share",
+      "peak_status",
+      "hour_label"
+    ],
+    "rows": 24
+  },
+  {
+    "table": "hourly_kpis_2025",
+    "columns": [
+      "annual_trips",
+      "avg_daily_trips",
+      "busiest_hour",
+      "peak_hour_share",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "mean_fare_usd",
+      "mean_charge_usd",
+      "peak_fare_hour"
+    ],
+    "rows": 1
+  },
+  {
+    "table": "interactive_daily_2025",
+    "columns": [
+      "pickup_date",
+      "location_id",
+      "zone",
+      "borough",
+      "latitude",
+      "longitude",
+      "trips",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "distance_n",
+      "distance_sum_mi"
+    ],
+    "rows": 95630
+  },
+  {
+    "table": "jfk_within_zone_diagnostics",
+    "columns": [
+      "trips",
+      "distance_n",
+      "zero_distance_trips",
+      "median_duration_min",
+      "p90_duration_min",
+      "median_distance_mi",
+      "fare_n",
+      "median_fare_usd"
+    ],
+    "rows": 1
+  },
+  {
+    "table": "monthly_2025",
+    "columns": [
+      "source_month",
+      "trips",
+      "distance_n",
+      "median_duration_min",
+      "p90_duration_min",
+      "median_distance_mi",
+      "distance_sum_mi",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "median_fare_usd",
+      "median_charge_usd"
+    ],
+    "rows": 12
+  },
+  {
+    "table": "negative_counterpart_check",
+    "columns": [
+      "negative_both_money_operational",
+      "exact_positive_counterpart_records"
+    ],
+    "rows": 1
+  },
+  {
+    "table": "negative_money_patterns",
+    "columns": [
+      "source_month",
+      "payment_type",
+      "operational_valid",
+      "records",
+      "both_negative",
+      "fare_only_negative",
+      "charge_only_negative",
+      "nonpositive_duration",
+      "zero_distance",
+      "median_recorded_fare_usd"
+    ],
+    "rows": 108
+  },
+  {
+    "table": "payment_2025",
+    "columns": [
+      "payment_type",
+      "trips",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "recorded_card_tip_usd"
+    ],
+    "rows": 6
+  },
+  {
+    "table": "payment_dashboard_2025",
+    "columns": [
+      "payment_type",
+      "trips",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "recorded_card_tip_usd",
+      "payment_label",
+      "trip_share"
+    ],
+    "rows": 6
+  },
+  {
+    "table": "payment_diagnostics",
+    "columns": [
+      "payment_type",
+      "payment_label",
+      "raw_records",
+      "operational_trips",
+      "fare_n",
+      "negative_money_raw",
+      "negative_money_operational",
+      "missing_money",
+      "zero_money",
+      "median_eligible_fare_usd",
+      "eligible_fare_sum_usd"
+    ],
+    "rows": 6
+  },
+  {
+    "table": "quality_long",
+    "columns": [
+      "metric",
+      "records"
+    ],
+    "rows": 8
+  },
+  {
+    "table": "quality_month",
+    "columns": [
+      "source_month",
+      "raw_records",
+      "operational_trips",
+      "pickup_outside_source_month",
+      "missing_timestamps",
+      "nonpositive_duration",
+      "over_180_minutes",
+      "zero_distance",
+      "missing_distance",
+      "implausible_distance",
+      "negative_money",
+      "disputed",
+      "voided",
+      "unknown_pickup",
+      "unknown_dropoff",
+      "fare_sample",
+      "distance_sample"
+    ],
+    "rows": 12
+  },
+  {
+    "table": "rate_2025",
+    "columns": [
+      "rate_code",
+      "trips",
+      "distance_n",
+      "median_duration_min",
+      "p90_duration_min",
+      "median_distance_mi",
+      "distance_sum_mi",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "median_fare_usd",
+      "median_charge_usd"
+    ],
+    "rows": 8
+  },
+  {
+    "table": "route_top20_2025",
+    "columns": [
+      "pu",
+      "do_zone",
+      "pickup_zone",
+      "dropoff_zone",
+      "route",
+      "trips",
+      "distance_n",
+      "median_duration_min",
+      "p90_duration_min",
+      "median_distance_mi",
+      "distance_sum_mi",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "median_fare_usd",
+      "median_charge_usd"
+    ],
+    "rows": 20
+  },
+  {
+    "table": "routes_2025",
+    "columns": [
+      "pu",
+      "do_zone",
+      "pickup_zone",
+      "dropoff_zone",
+      "route",
+      "trips",
+      "distance_n",
+      "median_duration_min",
+      "p90_duration_min",
+      "median_distance_mi",
+      "distance_sum_mi",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "median_fare_usd",
+      "median_charge_usd"
+    ],
+    "rows": 15441
+  },
+  {
+    "table": "sensitivity_2025",
+    "columns": [
+      "raw_records",
+      "positive_duration_in_month",
+      "within_120min",
+      "within_180min",
+      "within_240min",
+      "positive_distance_operations"
+    ],
+    "rows": 1
+  },
+  {
+    "table": "validation_summary",
+    "columns": [
+      "raw_records",
+      "operational_trips",
+      "excluded_operational_records"
+    ],
+    "rows": 1
+  },
+  {
+    "table": "weekday_2025",
+    "columns": [
+      "weekday_no",
+      "weekday",
+      "trips",
+      "calendar_days",
+      "trips_per_day"
+    ],
+    "rows": 7
+  },
+  {
+    "table": "weekday_heatmap_2025",
+    "columns": [
+      "weekday_no",
+      "weekday",
+      "hour",
+      "trips",
+      "fare_n",
+      "fare_sum_usd",
+      "charge_sum_usd",
+      "calendar_days",
+      "avg_daily_trips",
+      "mean_fare_usd",
+      "avg_daily_fare_usd"
+    ],
+    "rows": 168
+  },
+  {
+    "table": "weekday_hour_2025",
+    "columns": [
+      "weekday_no",
+      "weekday",
+      "hour",
+      "trips",
+      "median_duration_min",
+      "p90_duration_min"
+    ],
+    "rows": 168
+  },
+  {
+    "table": "zone_2025",
+    "columns": [
+      "location_id",
+      "zone",
+      "borough",
+      "trips",
+      "pickup_share",
+      "median_duration_min"
+    ],
+    "rows": 262
+  },
+  {
+    "table": "zone_balance_top20",
+    "columns": [
+      "location_id",
+      "zone",
+      "borough",
+      "pickups",
+      "dropoffs",
+      "net_dropoffs",
+      "direction"
+    ],
+    "rows": 20
+  },
+  {
+    "table": "zone_map_2025",
+    "columns": [
+      "location_id",
+      "zone",
+      "borough",
+      "latitude",
+      "longitude",
+      "trips",
+      "avg_daily_trips",
+      "point_definition"
+    ],
+    "rows": 260
+  },
+  {
+    "table": "zone_month_2025",
+    "columns": [
+      "source_month",
+      "location_id",
+      "zone",
+      "borough",
+      "trips"
+    ],
+    "rows": 3120
+  },
+  {
+    "table": "zone_pickup_dropoff_2025",
+    "columns": [
+      "location_id",
+      "zone",
+      "borough",
+      "pickups",
+      "dropoffs",
+      "net_dropoffs",
+      "direction"
+    ],
+    "rows": 263
+  },
+  {
+    "table": "zone_top15_2025",
+    "columns": [
+      "location_id",
+      "zone",
+      "borough",
+      "trips",
+      "pickup_share",
+      "median_duration_min"
+    ],
+    "rows": 15
+  }
+]

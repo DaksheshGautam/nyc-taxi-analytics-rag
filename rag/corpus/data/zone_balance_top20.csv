@@ -1,0 +1,21 @@
+location_id,zone,borough,pickups,dropoffs,net_dropoffs,direction
+75,East Harlem South,Manhattan,355891,550093,194202,More drop-offs
+50,Clinton West,Manhattan,330693,500212,169519,More drop-offs
+74,East Harlem North,Manhattan,189529,356971,167442,More drop-offs
+229,Sutton Place/Turtle Bay North,Manhattan,749353,909382,160029,More drop-offs
+233,UN/Turtle Bay South,Manhattan,518171,676962,158791,More drop-offs
+232,Two Bridges/Seward Park,Manhattan,131848,264395,132547,More drop-offs
+141,Lenox Hill West,Manhattan,1014488,1141690,127202,More drop-offs
+244,Washington Heights South,Manhattan,102925,227759,124834,More drop-offs
+143,Lincoln Square West,Manhattan,534631,658341,123710,More drop-offs
+231,TriBeCa/Civic Center,Manhattan,671927,791470,119543,More drop-offs
+79,East Village,Manhattan,1211705,1054619,-157086,More pickups
+43,Central Park,Manhattan,628161,462984,-165177,More pickups
+237,Upper East Side South,Manhattan,2087125,1896905,-190220,More pickups
+114,Greenwich Village South,Manhattan,701525,504419,-197106,More pickups
+249,West Village,Manhattan,1051276,842288,-208988,More pickups
+162,Midtown East,Manhattan,1484900,1275030,-209870,More pickups
+161,Midtown Center,Manhattan,2060295,1702999,-357296,More pickups
+186,Penn Station/Madison Sq West,Manhattan,1522498,1051544,-470954,More pickups
+138,LaGuardia Airport,Queens,1275310,469563,-805747,More pickups
+132,JFK Airport,Queens,2047254,453087,-1594167,More pickups

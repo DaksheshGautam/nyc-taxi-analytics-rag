@@ -1,0 +1,53 @@
+{
+  "database": "nyc_taxi",
+  "engine": "PostgreSQL 18",
+  "detailed_tables": [
+    {
+      "table": "daily_dropoff_zone",
+      "rows": 92171,
+      "trips": 48157684,
+      "fare_n": 44727165,
+      "reconciled": true
+    },
+    {
+      "table": "daily_hour_payment",
+      "rows": 43750,
+      "trips": 48157684,
+      "fare_n": 44727165,
+      "reconciled": true
+    },
+    {
+      "table": "daily_hour_pickup_zone",
+      "rows": 1429444,
+      "trips": 48157684,
+      "fare_n": 44727165,
+      "reconciled": true
+    },
+    {
+      "table": "monthly_route",
+      "rows": 467678,
+      "trips": 48157684,
+      "fare_n": 44727165,
+      "reconciled": true
+    },
+    {
+      "table": "monthly_zone_hour_payment",
+      "rows": 221643,
+      "trips": 48157684,
+      "fare_n": 44727165,
+      "reconciled": true
+    }
+  ],
+  "schema_sizes_bytes": {
+    "detail": 397516800,
+    "evidence": 1392640,
+    "taxi_analysis": 81920,
+    "results": 17842176
+  },
+  "total_table_and_index_bytes": 416833536,
+  "read_only_role_verified": true,
+  "raw_trip_access_denied": true,
+  "report_pdf_hash_verified": true,
+  "retrieval_snapshot_verified": true,
+  "groq_live_tested": false
+}

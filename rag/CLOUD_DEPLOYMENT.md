@@ -1,0 +1,11 @@
+# Streamlit and Neon PostgreSQL deployment
+
+Run `streamlit run streamlit_app.py` from this directory after installing `requirements.txt`. The cloud app reads the retained evidence snapshot and original documents from Neon PostgreSQL when `[postgres]` is configured. Without the database connection it clearly labels a bundled snapshot fallback. A failed configured database connection stops the app instead of silently switching evidence.
+
+The `nyc_taxi` database has separate `results`, `taxi_analysis` and `evidence` schemas. It stores typed analysis-result tables, a checksummed index, original source bytes and excerpt records. The full raw trip history remains local. Active extraction and result queries use PostgreSQL syntax; original DuckDB/MySQL scripts are archived locally for provenance. Runtime uses fixed, parameterized SELECT queries, a dedicated SELECT-only reader and read-only sessions. Connections verify the certificate and hostname using a trusted CA bundle.
+
+Deploy the GitHub directory containing this app through Streamlit Community Cloud; entrypoint is `streamlit_app.py`. Store the reader connection and Groq key in Streamlit secrets, using `secrets.example.toml` as the template. Never commit `.streamlit/secrets.toml`. Provider setup follows [Groq documentation](https://console.groq.com/docs/structured-outputs); cloud secret handling follows [Streamlit documentation](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management).
+
+Public evidence search requires no access code. LLM mode requires both the server-side Groq key and `LLM_ACCESS_CODE`. Share the access code privately with intended testers. A ten-second per-session cooldown limits accidental repeated requests; it is not a global spending cap. Configure provider quota/spend controls before sharing the code broadly. Prompts and answers are not persisted in MySQL.
+
+The Neon free plan has resource limits and may suspend idle compute. This prototype does not promise continuous availability. Live Groq verification is pending key entry.

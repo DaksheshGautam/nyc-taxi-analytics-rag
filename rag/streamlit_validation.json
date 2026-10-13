@@ -1,5 +1,6 @@
 {
   "interface_runs": true,
+  "cooldown_preserves_previous_answer_and_chart_scope": true,
   "shortcut_empty_form_race_fixed": true,
   "llm_disabled_without_key": true,
   "public_llm_without_access_code": true,

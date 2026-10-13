@@ -14,13 +14,15 @@ assert any('busiest pickup hour' in x.label.lower() for x in app.expander)
 assert any('Analysis report - page 6' in x.label for x in app.expander)
 next(b for b in app.button if b.label=='Zone balance').click().run()
 assert app.text_area[0].value=='Which zones have more drop-offs than pickups?'
-# Reproduce a submit arriving with an empty form value after a shortcut click.
-app.text_area[0].set_value('')
+# Submit the synchronized shortcut, without a batched form value overwriting it.
 next(b for b in app.button if b.label=='Find evidence').click().run()
 assert not app.exception
 assert not any('at least three' in w.value for w in app.warning)
 assert app.text_area[0].value=='Which zones have more drop-offs than pickups?'
 assert any('drop-offs' in x.label.lower() or 'zone' in x.label.lower() for x in app.expander)
+app.text_area[0].set_value('Which pickup hour was busiest in 2025?')
+next(b for b in app.button if b.label=='Find evidence').click().run()
+assert app.session_state['result']['question']=='Which pickup hour was busiest in 2025?'
 public=AppTest.from_file(str(root/'streamlit_app.py'),default_timeout=30)
 public.secrets['GROQ_API_KEY']='test-only-placeholder'
 public.secrets['LLM_PROVIDER']='groq'

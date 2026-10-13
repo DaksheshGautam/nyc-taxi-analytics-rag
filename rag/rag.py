@@ -114,7 +114,7 @@ def validate_answer(result,chunks):
     for claim in result['claims']:
         if not isinstance(claim,dict) or set(claim)!={'statement','evidence'}:raise GroundingError('Each claim must contain exactly statement (text) and evidence (a list of source_id/quote objects). Received '+(str([str(k)[:30] for k in list(claim)[:6]]) if isinstance(claim,dict) else type(claim).__name__)+'.')
         if not isinstance(claim['statement'],str) or not claim['statement'].strip() or len(claim['statement'])>1600:raise GroundingError('Invalid statement.')
-        if not isinstance(claim['evidence'],list) or not 1<=len(claim['evidence'])<=3:raise GroundingError('Each statement needs evidence.')
+        if not isinstance(claim['evidence'],list) or not 1<=len(claim['evidence'])<=10:raise GroundingError('Each paragraph needs one to ten evidence references; received '+(str(len(claim['evidence'])) if isinstance(claim['evidence'],list) else type(claim['evidence']).__name__)+'.')
         cited_text=[]
         for ref in claim['evidence']:
             if not isinstance(ref,dict) or set(ref)!={'source_id','quote'}:raise GroundingError('Invalid evidence reference.')

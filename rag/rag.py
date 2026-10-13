@@ -1,6 +1,6 @@
 """Local evidence retrieval and a citation-checked LLM adapter."""
 from pathlib import Path
-import json, math, re, os, collections, urllib.request, urllib.error
+import json, math, re, os, collections, urllib.request, urllib.error, copy
 
 ROOT=Path(__file__).resolve().parent
 STOP=set('a an the is are was were be been to of and or in on for with from by at as it this that what which how much many can could you me tell explain about do does why than all show give my we our'.split())
@@ -143,19 +143,25 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
     if not readiness(v):raise LLMError('LLM setup is pending. Evidence search works without a key.')
     context=json.dumps([{'id':c['id'],'title':c['title'],'source':c['source'],'page':c.get('page'),'text':c['text']} for c in chunks],ensure_ascii=False)
     provider=v.get('LLM_PROVIDER','openai')
+    schema=copy.deepcopy(SCHEMA)
+    quotes=list(dict.fromkeys(part.strip() for c in chunks for part in re.split(r'\n+|(?<=[.!?])\s+(?=[A-Z])',c['text']) if len(part.strip())>=12))
+    if quotes:
+        ref=schema['properties']['claims']['items']['properties']['evidence']['items']['properties']
+        ref['quote']['enum']=quotes
+        ref['source_id']['enum']=[c['id'] for c in chunks]
     messages=[{'role':'system','content':SYSTEM},{'role':'user','content':'Question: '+question+'\nEvidence JSON:\n'+context}]
     if provider=='openai':
         endpoint=v.get('LLM_BASE_URL','https://api.openai.com/v1').rstrip('/')+'/responses'
         payload={'model':v['LLM_MODEL'],'input':messages,'store':False,'max_output_tokens':1800,
-                 'text':{'format':{'type':'json_schema','name':'taxi_evidence_answer','strict':True,'schema':SCHEMA}}}
+                   'text':{'format':{'type':'json_schema','name':'taxi_evidence_answer','strict':True,'schema':schema}}}
     elif provider in ['compatible','groq']:
         endpoint=v.get('LLM_BASE_URL','https://api.groq.com/openai/v1').rstrip('/')+'/chat/completions'
         payload={'model':v['LLM_MODEL'],'messages':messages,'max_tokens':2500,
-                 'response_format':{'type':'json_schema','json_schema':{'name':'taxi_evidence_answer','strict':True,'schema':SCHEMA}}}
+                 'response_format':{'type':'json_schema','json_schema':{'name':'taxi_evidence_answer','strict':True,'schema':schema}}}
         if provider=='groq' and v['LLM_MODEL'] in ['openai/gpt-oss-20b','openai/gpt-oss-120b']:payload['reasoning_effort']='low'
         if _json_object:
             payload['response_format']={'type':'json_object'}
-            messages[0]['content']+='\nRequired JSON schema: '+json.dumps(SCHEMA)
+            messages[0]['content']+='\nRequired JSON schema: '+json.dumps(schema)
     else:raise LLMError('This provider needs an adapter before live use.')
     if not endpoint.startswith('https://'):raise LLMError('The LLM endpoint must use HTTPS.')
     try:

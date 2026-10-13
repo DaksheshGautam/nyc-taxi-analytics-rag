@@ -1,3 +1,5 @@
 streamlit==1.65.0
 psycopg[binary]==3.3.6
 certifi==2026.7.22
+pandas==3.0.6
+altair==6.3.0

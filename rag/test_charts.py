@@ -31,7 +31,7 @@ class ChartTests(unittest.TestCase):
         self.assertEqual(int(hour.loc[hour['fare_sum_usd'].idxmax(),'hour']),17)
     def test_chart_specs(self):
         kb=KnowledgeBase()
-        for q in ['Busiest hour and fare revenue','Weekday versus weekend demand','Weekday hour heatmap','Zone balance','Monthly trip trend','Excluded records cleaning']:
+        for q in ['Busiest hour and fare revenue','Weekday versus weekend demand','Weekday hour heatmap','Zone balance','Monthly trip trend','Monthly average fare','Payment types','Excluded records cleaning']:
             ui=Display();render(ui,q,{},kb)
             self.assertTrue(ui.charts,q)
             self.assertEqual(ui.charts[0]['config']['background'],'#252D3A')

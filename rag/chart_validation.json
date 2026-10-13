@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "source": "Neon results.hourly_dashboard_2025",
+      "population_reconciled": true
+    },
+    {
+      "source": "Neon results.daytype_hour_2025",
+      "population_reconciled": true
+    },
+    {
+      "source": "Neon results.weekday_heatmap_2025",
+      "population_reconciled": true
+    },
+    {
+      "source": "Neon results.monthly_2025",
+      "population_reconciled": true
+    },
+    {
+      "source": "Neon detail.daily_hour_pickup_zone",
+      "filtered_chart_reconciled": true,
+      "dimension": "pickup_hour"
+    },
+    {
+      "source": "Neon detail.daily_hour_payment",
+      "filtered_chart_reconciled": true,
+      "dimension": "pickup_hour"
+    },
+    {
+      "source": "Neon detail.daily_dropoff_zone",
+      "filtered_chart_reconciled": true,
+      "dimension": "pickup_date"
+    },
+    {
+      "source": "Neon detail.monthly_route",
+      "filtered_chart_reconciled": true,
+      "dimension": "source_month"
+    },
+    {
+      "source": "Neon detail.monthly_zone_hour_payment",
+      "filtered_chart_reconciled": true,
+      "dimension": "pickup_hour"
+    }
+  ],
+  "raw_sql_from_llm": false,
+  "chart_data_verified": true
+}

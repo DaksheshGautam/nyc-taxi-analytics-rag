@@ -67,3 +67,8 @@ On 13 October 2026, the deployed Groq adapter returned a busiest-hour answer wit
 ## Public website
 
 https://nyc-taxi-evidence.streamlit.app/ is public. Visitors can ask the LLM without a sign-in or private access code, search evidence, explore compatible filtered database numbers, and download the complete report beneath the title. API keys and database credentials remain server-side.
+
+
+## Visual answers
+
+Relevant questions automatically display interactive charts from fixed, verified results: hourly demand and fares, weekday/weekend demand, weekday-hour heatmaps, NYC zone balance, monthly trips/fares, payment categories and cleaning populations. Charts have exact-value tooltips, source and period labels, and downloadable plotted data. Filtered query charts preserve the selected scope and use summed eligible numerators and denominators. Unsupported periods are not silently presented as 2025. Charts are selected by supported question patterns; the LLM does not generate or execute chart SQL. Live Neon chart populations and all five filtered chart scopes reconciled; see chart_validation.json.

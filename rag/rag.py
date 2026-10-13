@@ -149,11 +149,6 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
     context=json.dumps([{'id':c['id'],'text':c['text']} for c in answer_chunks],ensure_ascii=False)
     provider=v.get('LLM_PROVIDER','openai')
     schema=copy.deepcopy(SCHEMA)
-    quotes=list(dict.fromkeys(part.strip() for c in answer_chunks for part in re.split(r'\n+|(?<=[.!?])\s+(?=[A-Z])',c['text']) if len(part.strip())>=12 and not part.strip().startswith(('Evidence:','#'))))
-    if quotes:
-        ref=schema['properties']['claims']['items']['properties']['evidence']['items']['properties']
-        ref['quote']['enum']=quotes
-        ref['source_id']['enum']=[c['id'] for c in answer_chunks]
     messages=[{'role':'system','content':SYSTEM},{'role':'user','content':'Question: '+question+'\nEvidence JSON:\n'+context}]
     if provider=='openai':
         endpoint=v.get('LLM_BASE_URL','https://api.openai.com/v1').rstrip('/')+'/responses'

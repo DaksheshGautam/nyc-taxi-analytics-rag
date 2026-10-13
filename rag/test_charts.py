@@ -36,5 +36,8 @@ class ChartTests(unittest.TestCase):
             ui=Display();render(ui,q,{},kb)
             self.assertTrue(ui.charts,q)
             self.assertEqual(ui.charts[0]['config']['background'],'#252D3A')
+    def test_hour_fare_and_cleaning_comparison_has_all_charts(self):
+        ui=Display();render(ui,'Compare peak hour and recorded fare totals and explain cleaning exclusions in 2025',{},KnowledgeBase())
+        self.assertEqual(len(ui.charts),3)
 
 if __name__=='__main__':unittest.main()

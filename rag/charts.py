@@ -48,6 +48,11 @@ def theme(chart):
 
 def render(st,question,db,kb,selection=None):
     kind=choose(question)
+    render_kind(st,question,db,kb,selection,kind)
+    if not selection and kind=='cleaning' and any(w in question.lower() for w in ['hour','busiest','peak']):
+        render_kind(st,question,db,kb,None,'hour')
+
+def render_kind(st,question,db,kb,selection,kind):
     if selection:
         df,dimension,source,query=filtered_records(db,selection,question)
         if df.empty:return

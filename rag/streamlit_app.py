@@ -61,6 +61,9 @@ if submitted:
     if len(question.strip())<3:st.warning('Enter a question of at least three characters.')
     else:
         chunks=kb.search(question)
+        if 'cleaning' in question.lower() or 'exclusion' in question.lower():
+            known={c['id'] for c in chunks}
+            chunks.extend(c for c in kb.search('operational fare eligibility cleaning exclusions',k=2) if c['id'] not in known)
         if 'detail_result' in st.session_state:chunks=[st.session_state['detail_result']['chunk']]+chunks
         if not chunks:st.info('No matching project evidence was found.')
         elif mode=='Ask LLM':

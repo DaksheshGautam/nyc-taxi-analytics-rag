@@ -156,7 +156,7 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
                    'text':{'format':{'type':'json_schema','name':'taxi_evidence_answer','strict':True,'schema':schema}}}
     elif provider in ['compatible','groq']:
         endpoint=v.get('LLM_BASE_URL','https://api.groq.com/openai/v1').rstrip('/')+'/chat/completions'
-        payload={'model':v['LLM_MODEL'],'messages':messages,'max_tokens':2500,
+        payload={'model':v['LLM_MODEL'],'messages':messages,'max_tokens':1400,
                  'response_format':{'type':'json_schema','json_schema':{'name':'taxi_evidence_answer','strict':True,'schema':schema}}}
         if provider=='groq' and v['LLM_MODEL'] in ['openai/gpt-oss-20b','openai/gpt-oss-120b']:payload['reasoning_effort']='low'
         if _json_object:

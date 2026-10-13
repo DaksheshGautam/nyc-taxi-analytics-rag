@@ -46,6 +46,7 @@ with st.form('question_form'):
     question=st.text_area('Your question',placeholder='Which pickup hour was busiest in 2025?',max_chars=2000,key='question_input',height=110)
     submitted=st.form_submit_button('Find evidence' if mode=='Search evidence' else 'Ask with evidence')
 if submitted:
+    st.session_state.pop('result',None)
     if len(question.strip())<3:st.warning('Enter a question of at least three characters.')
     else:
         chunks=kb.search(question)
@@ -62,6 +63,9 @@ if submitted:
                 except GroundingError:st.session_state['result']={'claims':[],'sources':chunks,'message':'The generated answer failed grounding checks and was withheld.'}
                 except LLMError as e:st.session_state['result']={'claims':[],'sources':chunks,'message':str(e)}
         else:st.session_state['result']={'claims':[],'sources':chunks,'message':'Retrieved excerpts only — no LLM-generated answer.'}
+if submitted and 'result' in st.session_state:
+    st.session_state['result']['question']=question
+    st.session_state['result']['chart_selection']=st.session_state.get('detail_result')
 if 'result' in st.session_state:
     result=st.session_state['result'];st.subheader('Answer and evidence' if result['claims'] else 'Retrieved evidence');st.info(result['message'])
     for claim in result['claims']:
@@ -69,6 +73,10 @@ if 'result' in st.session_state:
         for ref in claim['evidence']:
             source=next(c for c in result['sources'] if c['id']==ref['source_id'])
             st.markdown('> '+ref['quote'].replace('\n','\n> '));st.caption(source['source']+(f" · page {source['page']}" if source.get('page') else ''))
+    try:
+        from charts import render
+        render(st,result.get('question',''),db,kb,result.get('chart_selection'))
+    except Exception:st.caption('The supporting chart is temporarily unavailable. Source excerpts remain available below.')
     for c in result['sources']:
         with st.expander(c['title'],expanded=False):
             st.caption(c['source']+(f" · page {c['page']}" if c.get('page') else '')+(f" · CSV row {c['row']}" if c.get('row') else ''))

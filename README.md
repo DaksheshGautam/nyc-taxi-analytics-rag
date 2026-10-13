@@ -12,7 +12,7 @@ NYC yellow taxi analysis with a Tableau dashboard, an evidence-based report, a N
 
 Neon holds 2,254,686 detailed groups, plus retained result tables and checksummed report evidence. All five detailed table totals reconcile to 48,157,684 operational trips and 44,727,165 fare-eligible records. Raw trips remain local. The cloud explorer supports compatible filtered dimensions and adds selected results to question evidence; it is not an unrestricted natural-language SQL agent.
 
-Evidence search works without an API key. Groq answers require a private server-side key and access code. Live LLM testing is pending key entry.
+Evidence search works without an API key. Groq answers are public and need no visitor sign-in or access code. The provider key stays server-side. A live cited answer was verified on 13 October 2026. Download the full report directly beneath the website title.
 
 Live app: https://nyc-taxi-evidence.streamlit.app/
 

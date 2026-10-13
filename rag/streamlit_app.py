@@ -70,17 +70,23 @@ if 'result' in st.session_state:
     result=st.session_state['result'];st.subheader('Answer and evidence' if result['claims'] else 'Retrieved evidence');st.info(result['message'])
     for claim in result['claims']:
         st.write(claim['statement'])
+        labels=[]
         for ref in claim['evidence']:
             source=next(c for c in result['sources'] if c['id']==ref['source_id'])
-            st.markdown('> '+ref['quote'].replace('\n','\n> '));st.caption(source['source']+(f" · page {source['page']}" if source.get('page') else ''))
+            labels.append(source['source'].split('/')[-1]+(f" · page {source['page']}" if source.get('page') else ''))
+        st.caption('Sources: '+' · '.join(dict.fromkeys(labels)))
     try:
         from charts import render
         render(st,result.get('question',''),db,kb,result.get('chart_selection'))
     except Exception:st.caption('The supporting chart is temporarily unavailable. Source excerpts remain available below.')
-    for c in result['sources']:
-        with st.expander(c['title'],expanded=False):
-            st.caption(c['source']+(f" · page {c['page']}" if c.get('page') else '')+(f" · CSV row {c['row']}" if c.get('row') else ''))
-            st.text(c['text'])
+    with st.expander('Inspect supporting evidence',expanded=False):
+        st.caption('Original excerpts and exact quotes are retained here for checking the answer.')
+        for c in result['sources']:
+            with st.expander(c['title'],expanded=False):
+                st.caption(c['source']+(f" · page {c['page']}" if c.get('page') else '')+(f" · CSV row {c['row']}" if c.get('row') else ''))
+                quoted=[ref['quote'] for claim in result['claims'] for ref in claim['evidence'] if ref['source_id']==c['id']]
+                for quote in dict.fromkeys(quoted):st.markdown('> '+quote.replace('\n','\n> '))
+                st.text(c['text'])
 st.html('<div class="section-label">EXPLORE THE PROJECT</div>')
 if db.get('url'):
     from detailed_store import GRAINS,zones,summary

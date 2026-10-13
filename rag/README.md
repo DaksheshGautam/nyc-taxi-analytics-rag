@@ -81,3 +81,7 @@ A subsequent live retest on 13 October 2026 passed the source-constrained cleani
 
 
 All four example shortcuts passed the subsequent live retest: cleaning rules, zone balance, negative money and busiest hour. Cleaning, zone and hourly questions displayed their corresponding charts; the qualitative negative-money answer needed no chart. No minimum-question-length error occurred. These results verify the tested questions; closely spaced calls can still encounter provider HTTP 429.
+
+## Explanatory answers
+
+Answers now explain supported comparisons, definitions and limits in connected paragraphs. Complex requests over 180 characters use Groq GPT-OSS 120B when the configured model is GPT-OSS 20B; short requests retain the configured model. The model selects supporting source IDs, and the application attaches exact source excerpts before validating source membership and every numerical statement. This avoids model transcription errors; citation and numeric checks still do not prove semantic entailment. Evidence generation prioritizes verified summaries within a bounded context; unsupported detail should remain unanswered. A live multi-part peak-hour/fare/cleaning comparison passed on 13 October 2026 with explanatory paragraphs and three charts. A dedicated guard preserves the observed zero exclusions from missing timestamps. Automated verification passed 22 RAG/HTTP tests, four chart tests, and Streamlit UI checks.

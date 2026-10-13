@@ -17,5 +17,7 @@
   "zone_balance_retest": "Passed: East Harlem South +194,202 and NYC zone comparison chart",
   "negative_money_retest": "Passed after waiting: negative money records are not automatically refunds; FAQ citation",
   "busiest_hour_retest": "Passed: 18:00-18:59, FAQ and report page 6 citations, 24-hour chart",
-  "all_four_shortcuts_retested": true
+  "all_four_shortcuts_retested": true,
+  "complex_explanation_retest": "Passed: peak pickup versus recorded meter-fare hour, operational versus fare-eligible populations, cleaning and causal limits; cleaning, hourly trip and hourly fare charts displayed",
+  "complex_question_model": "openai/gpt-oss-120b"
 }

@@ -63,6 +63,12 @@ class AnswerTests(unittest.TestCase):
         self.assertEqual(actual['claims'][0]['evidence'][0]['quote'],self.chunks[0]['text'])
         answer['claims'][0]['statement']='There were 999999999 trips.'
         with self.assertRaises(GroundingError):llm_answer('Busiest hour?',self.chunks,{'LLM_PROVIDER':'groq','GROQ_API_KEY':'offline-placeholder','LLM_MODEL':'openai/gpt-oss-20b'},fake)
+    def test_zero_missing_timestamps_not_actual_removals(self):
+        chunk=KB.by_id['fact-funnel']
+        bad={'status':'answered','claims':[{'statement':'Records were removed because of missing timestamps.','evidence':[{'source_id':chunk['id'],'quote':chunk['text']}]}]}
+        with self.assertRaises(GroundingError):validate_answer(bad,[chunk])
+        bad['claims'][0]['statement']='Missing timestamps contributed zero exclusions.'
+        validate_answer(bad,[chunk])
     def test_groq_schema_failure_retried_and_validated(self):
         import io
         calls=[]

@@ -19,6 +19,7 @@ app.text_area[0].set_value('')
 next(b for b in app.button if b.label=='Find evidence').click().run()
 assert not app.exception
 assert not any('at least three' in w.value for w in app.warning)
+assert app.text_area[0].value=='Which zones have more drop-offs than pickups?'
 assert any('drop-offs' in x.label.lower() or 'zone' in x.label.lower() for x in app.expander)
 public=AppTest.from_file(str(root/'streamlit_app.py'),default_timeout=30)
 public.secrets['GROQ_API_KEY']='test-only-placeholder'

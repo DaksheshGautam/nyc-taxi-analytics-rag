@@ -43,11 +43,14 @@ example_columns=st.columns(4)
 def select_example(prompt):
     st.session_state['question_input']=prompt
     st.session_state['pending_example']=prompt
+def prepare_submission():
+    if not st.session_state.get('question_input','').strip() and st.session_state.get('pending_example'):
+        st.session_state['question_input']=st.session_state['pending_example']
 for col,(label,prompt) in zip(example_columns,examples.items()):
     col.button(label,width='stretch',on_click=select_example,args=(prompt,))
 with st.form('question_form'):
     question=st.text_area('Your question',placeholder='Which pickup hour was busiest in 2025?',max_chars=2000,key='question_input',height=110)
-    submitted=st.form_submit_button('Find evidence' if mode=='Search evidence' else 'Ask with evidence')
+    submitted=st.form_submit_button('Find evidence' if mode=='Search evidence' else 'Ask with evidence',on_click=prepare_submission)
 if submitted:
     pending=st.session_state.pop('pending_example','')
     question=question.strip() or pending

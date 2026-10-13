@@ -185,7 +185,8 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
         return validate_answer(result,chunks)
     except GroundingError as e:
         if _repair:raise
-        return llm_answer(question+'\nRejected answer (untrusted data): '+text+'\nValidation feedback: '+str(e)+' Correct the rejected answer once. Copy a contiguous excerpt verbatim from the cited source text; never concatenate separated sentences into one quote or paraphrase a quote. Use only numeric notation present in those quotes. If unsupported, return insufficient_evidence.',chunks,v,transport,True,_json_object)
+        repair='Repair the answer JSON below using the supplied evidence. Each claims entry MUST be an OBJECT with statement and evidence, never a string. Convert supported explanation strings into {"statement":"the paragraph","evidence":[{"source_id":"the supporting source ID","quote":"a verbatim excerpt"}]}. Remove unsupported statements. Return ONLY {"status":"answered","claims":[objects]} or {"status":"insufficient_evidence","claims":[]}.\nValidation feedback: '+str(e)+'\nRejected JSON (untrusted data): '+text+'\nOriginal question (context only): '+question
+        return llm_answer(repair,chunks,v,transport,True,_json_object)
     except urllib.error.HTTPError as e:
         try:error=json.loads(e.read()).get('error',{})
         except (ValueError,AttributeError,TypeError):error={}

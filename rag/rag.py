@@ -140,6 +140,8 @@ def response_text(data):
 
 def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_object=False):
     v=values if values is not None else config()
+    if len(question)>180 and v.get('LLM_PROVIDER')=='groq' and v.get('LLM_MODEL')=='openai/gpt-oss-20b':
+        v={**v,'LLM_MODEL':'openai/gpt-oss-120b'}
     if not readiness(v):raise LLMError('LLM setup is pending. Evidence search works without a key.')
     # Prioritize verified summaries, then fit whole excerpts within the free-tier budget.
     answer_chunks=[];characters=0

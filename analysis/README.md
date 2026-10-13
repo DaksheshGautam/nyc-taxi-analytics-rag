@@ -121,11 +121,11 @@ Full raw trips stay local. The five additional detail tables contain 2,254,686 d
 
 
 
-This is a local, portable snapshot. No scheduled refresh, publishing, cloud database or public share link is configured. Public trips describe completed activity; they do not measure unmet demand, utilization, idle time, operating profit or driver shift earnings. Charges are nominal USD and exclude cash tips.
+This is a fixed, portable source snapshot. The evidence app is published at https://nyc-taxi-evidence.streamlit.app/ and uses a read-only Neon PostgreSQL connection. No scheduled dataset refresh is configured. Public trips describe completed activity; they do not measure unmet demand, utilization, idle time, operating profit or driver shift earnings. Charges are nominal USD and exclude cash tips.
 
 
 
-The deliverable package is ready for later GitHub review/upload. Raw records, database files, local application caches and secrets are excluded. The ZIP package should not be committed alongside its unpacked contents. The revised report PDF is published on main at DaksheshGautam/DaksheshGautam.github.io/public/projects/nyc-taxi-analysis.pdf. The complete SQL/Tableau package has not been uploaded.
+The deliverable package is ready for later GitHub review/upload. Raw records, database files, local application caches and secrets are excluded. The ZIP package should not be committed alongside its unpacked contents. The revised report PDF is published on main at DaksheshGautam/DaksheshGautam.github.io/public/projects/nyc-taxi-analysis.pdf. The complete project source, SQL, report and Tableau workbook are published at https://github.com/DaksheshGautam/nyc-taxi-analytics-rag.
 
 
 
@@ -138,3 +138,10 @@ The final report has 10 ordered sections/pages, five figures regenerated from re
 ## Local RAG evidence assistant
 
 The `nyc-taxi-rag` folder includes a local/Streamlit evidence search and Groq adapter. It indexes the analysis PDF, selected SQL result tables, and generated metric, FAQ and evidence-boundary documents. Run `python nyc-taxi-rag/server.py` and open http://127.0.0.1:8765. Offline verification passed 18 tests. Live LLM verification is pending the new Groq Cloud key. See `nyc-taxi-rag/README.md` for setup and grounding limits. A separate portable archive is `NYC_Taxi_RAG_Assistant.zip`.
+
+
+## Published cloud evidence
+
+Neon stores five detailed tables containing 2,254,686 groups, plus typed original results and verified report evidence. Table and index storage is 416,833,536 bytes. See `neon_database_validation.json`, `postgresql_execution_validation.json` and `detailed_query_validation.json`. All nineteen result queries reconcile to retained originals, with documented tolerance for original four-decimal division outputs. Raw records remain local; converted raw-trip queries were semantically planned, not reexecuted in Neon.
+
+The Streamlit explorer supports available filtered dimensions and attaches selected query results to the next question. It does not execute unrestricted natural-language SQL. Groq live testing is pending the new API key. Credentials remain private. `load_detailed_postgresql.py` imports detailed aggregates after `load_postgresql.py`; the separately packaged `NYC_Taxi_PostgreSQL_Data.zip` contains the compressed data.

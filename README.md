@@ -14,4 +14,6 @@ Neon holds 2,254,686 detailed groups, plus retained result tables and checksumme
 
 Evidence search works without an API key. Groq answers require a private server-side key and access code. Live LLM testing is pending key entry.
 
+Live app: https://nyc-taxi-evidence.streamlit.app/
+
 No owner credentials, database passwords, API keys or private access codes are included.

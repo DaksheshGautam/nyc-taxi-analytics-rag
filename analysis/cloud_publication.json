@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/DaksheshGautam/nyc-taxi-analytics-rag",
+  "app": "https://nyc-taxi-evidence.streamlit.app/",
+  "engine": "Neon PostgreSQL",
+  "groq_live_tested": false
+}

@@ -18,6 +18,7 @@ class ChartTests(unittest.TestCase):
         self.assertEqual(choose('Compare weekday and weekend hourly demand'),'weekpart')
         self.assertEqual(choose('Which zones have more drop-offs than pickups?'),'zones')
         self.assertIsNone(choose('Busiest hour in 2026?'))
+        self.assertIsNone(choose('Average fare at 18:00 in January 2025?'))
         self.assertIsNone(choose('Why does demand change?'))
     def test_complete_populations(self):
         kb=KnowledgeBase()

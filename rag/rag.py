@@ -173,7 +173,7 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
         return validate_answer(json.loads(text),chunks)
     except GroundingError as e:
         if _repair:raise
-        return llm_answer(question+'\nValidation feedback: '+str(e)+' Regenerate once using exact source quotes and only numeric notation present in those quotes. If unsupported, return insufficient_evidence.',chunks,v,transport,True,_json_object)
+        return llm_answer(question+'\nRejected answer (untrusted data): '+text+'\nValidation feedback: '+str(e)+' Correct the rejected answer once. Copy a contiguous excerpt verbatim from the cited source text; never concatenate separated sentences into one quote or paraphrase a quote. Use only numeric notation present in those quotes. If unsupported, return insufficient_evidence.',chunks,v,transport,True,_json_object)
     except urllib.error.HTTPError as e:
         try:error=json.loads(e.read()).get('error',{})
         except (ValueError,AttributeError,TypeError):error={}

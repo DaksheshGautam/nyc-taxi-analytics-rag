@@ -31,5 +31,19 @@ assert list(public.radio[0].options)==['Ask LLM','Search evidence']
 assert public.radio[0].value=='Ask LLM'
 assert not any(x.label=='LLM access code' for x in public.text_input)
 assert not any('Private LLM access' in x.label for x in public.expander)
-checks={'interface_runs':True,'shortcut_empty_form_race_fixed':True,'llm_disabled_without_key':True,'public_llm_without_access_code':True,'busiest_hour_retrieval':True,'report_page_citation':True,'live_llm_tested':False}
+from unittest.mock import patch
+from rag import KnowledgeBase
+evidence=KnowledgeBase().by_id['fact-peak-hour']
+fake_answer={'status':'answered','claims':[{'statement':'The busiest pickup hour is 18:00-18:59 in 2025.','evidence':[{'source_id':evidence['id'],'quote':evidence['text'].split('Evidence:')[0].strip()}]}]}
+with patch('rag.llm_answer',return_value=fake_answer) as mocked:
+    public.text_area[0].set_value('Which pickup hour was busiest in 2025?')
+    next(b for b in public.button if b.label=='Ask with evidence').click().run()
+    assert not public.exception
+    before=public.session_state['result']['question']
+    public.text_area[0].set_value('How do payment types compare?')
+    next(b for b in public.button if b.label=='Ask with evidence').click().run()
+    assert public.session_state['result']['question']==before
+    assert mocked.call_count==1
+    assert any('ten seconds' in w.value for w in public.warning)
+checks={'interface_runs':True,'cooldown_preserves_previous_answer_and_chart_scope':True,'shortcut_empty_form_race_fixed':True,'llm_disabled_without_key':True,'public_llm_without_access_code':True,'busiest_hour_retrieval':True,'report_page_citation':True,'live_llm_tested':False}
 (root/'streamlit_validation.json').write_text(json.dumps(checks,indent=2));print(json.dumps(checks))

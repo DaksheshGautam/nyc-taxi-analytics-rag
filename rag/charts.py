@@ -10,6 +10,8 @@ TABLES={'hour':'hourly_dashboard_2025','weekpart':'daytype_hour_2025','heatmap':
 def choose(question):
     q=question.lower()
     if any(y!='2025' for y in re.findall(r'\b20\d{2}\b',q)):return None
+    # Annual aggregates cannot substantiate a question restricted to one month.
+    if re.search(r'\b(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sep|oct|nov|dec)\b|\b2025-\d{2}',q):return None
     if any(w in q for w in ['excluded','cleaning','eligible','funnel']):return 'cleaning'
     if 'payment' in q:return 'payment'
     if any(w in q for w in ['drop-off','dropoff','drop-offs','dropoffs','zone balance','zones have']):return 'zones'

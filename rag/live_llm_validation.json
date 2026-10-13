@@ -13,5 +13,9 @@
   "verified_date": "2026-10-13",
   "zone_balance_answer_and_chart_verified": true,
   "groq_http_429_observed": true,
-  "source_constrained_cleaning_retest": "Blocked by provider HTTP 429; not verified"
+  "source_constrained_cleaning_retest": "Passed: cited explanation and cleaning population chart",
+  "zone_balance_retest": "Passed: East Harlem South +194,202 and NYC zone comparison chart",
+  "negative_money_retest": "Passed after waiting: negative money records are not automatically refunds; FAQ citation",
+  "busiest_hour_retest": "Passed: 18:00-18:59, FAQ and report page 6 citations, 24-hour chart",
+  "all_four_shortcuts_retested": true
 }

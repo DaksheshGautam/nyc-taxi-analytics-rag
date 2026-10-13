@@ -112,7 +112,7 @@ def validate_answer(result,chunks):
     if not 1<=len(result['claims'])<=10:raise GroundingError('An answered result requires between one and ten supported paragraphs; received '+str(len(result['claims']))+'.')
     allowed={c['id']:c for c in chunks}
     for claim in result['claims']:
-        if not isinstance(claim,dict) or set(claim)!={'statement','evidence'}:raise GroundingError('Each claim must contain exactly statement (text) and evidence (a list of source_id/quote objects).')
+        if not isinstance(claim,dict) or set(claim)!={'statement','evidence'}:raise GroundingError('Each claim must contain exactly statement (text) and evidence (a list of source_id/quote objects). Received '+(str([str(k)[:30] for k in list(claim)[:6]]) if isinstance(claim,dict) else type(claim).__name__)+'.')
         if not isinstance(claim['statement'],str) or not claim['statement'].strip() or len(claim['statement'])>1600:raise GroundingError('Invalid statement.')
         if not isinstance(claim['evidence'],list) or not 1<=len(claim['evidence'])<=3:raise GroundingError('Each statement needs evidence.')
         cited_text=[]

@@ -149,6 +149,10 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
     context=json.dumps([{'id':c['id'],'text':c['text']} for c in answer_chunks],ensure_ascii=False)
     provider=v.get('LLM_PROVIDER','openai')
     schema=copy.deepcopy(SCHEMA)
+    if _repair:
+        refs=schema['properties']['claims']['items']['properties']['evidence']['items']['properties']
+        refs['quote']['enum']=[c['text'] for c in answer_chunks]
+        refs['source_id']['enum']=[c['id'] for c in answer_chunks]
     messages=[{'role':'system','content':SYSTEM},{'role':'user','content':'Question: '+question+'\nEvidence JSON:\n'+context}]
     if provider=='openai':
         endpoint=v.get('LLM_BASE_URL','https://api.openai.com/v1').rstrip('/')+'/responses'
@@ -182,6 +186,12 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
             result={'status':result.get('status'),'claims':[
                 {'statement':c['statement'],'evidence':c['evidence']} if isinstance(c,dict) and 'statement' in c and 'evidence' in c else c
                 for c in result['claims']]}
+            for claim in result['claims']:
+                if not isinstance(claim,dict) or not isinstance(claim.get('evidence'),list):continue
+                for ref in claim['evidence']:
+                    if not isinstance(ref,dict) or not isinstance(ref.get('quote'),str):continue
+                    matches=[c for c in answer_chunks if normalize(ref['quote']) in normalize(c['text'])]
+                    if len(matches)==1:ref['source_id']=matches[0]['id']
         return validate_answer(result,chunks)
     except GroundingError as e:
         if _repair:raise

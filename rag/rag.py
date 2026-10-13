@@ -144,7 +144,7 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_ob
     # Prioritize verified summaries, then fit whole excerpts within the free-tier budget.
     answer_chunks=[];characters=0
     for c in sorted(chunks,key=lambda c:not c['id'].startswith('fact-')):
-        if answer_chunks and characters+len(c['text'])>3500:continue
+        if answer_chunks and characters+len(c['text'])>1800:continue
         answer_chunks.append(c);characters+=len(c['text'])
     context=json.dumps([{'id':c['id'],'text':c['text']} for c in answer_chunks],ensure_ascii=False)
     provider=v.get('LLM_PROVIDER','openai')

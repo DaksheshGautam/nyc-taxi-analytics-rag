@@ -137,7 +137,7 @@ def response_text(data):
     if not texts:raise LLMError('The model returned no usable answer.')
     return ''.join(texts)
 
-def llm_answer(question,chunks,values=None,transport=None,_repair=False):
+def llm_answer(question,chunks,values=None,transport=None,_repair=False,_json_object=False):
     v=values if values is not None else config()
     if not readiness(v):raise LLMError('LLM setup is pending. Evidence search works without a key.')
     context=json.dumps([{'id':c['id'],'title':c['title'],'source':c['source'],'page':c.get('page'),'text':c['text']} for c in chunks],ensure_ascii=False)
@@ -149,8 +149,12 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False):
                  'text':{'format':{'type':'json_schema','name':'taxi_evidence_answer','strict':True,'schema':SCHEMA}}}
     elif provider in ['compatible','groq']:
         endpoint=v.get('LLM_BASE_URL','https://api.groq.com/openai/v1').rstrip('/')+'/chat/completions'
-        payload={'model':v['LLM_MODEL'],'messages':messages,'max_tokens':1800,
+        payload={'model':v['LLM_MODEL'],'messages':messages,'max_tokens':2500,
                  'response_format':{'type':'json_schema','json_schema':{'name':'taxi_evidence_answer','strict':True,'schema':SCHEMA}}}
+        if provider=='groq' and v['LLM_MODEL'] in ['openai/gpt-oss-20b','openai/gpt-oss-120b']:payload['reasoning_effort']='low'
+        if _json_object:
+            payload['response_format']={'type':'json_object'}
+            messages[0]['content']+='\nRequired JSON schema: '+json.dumps(SCHEMA)
     else:raise LLMError('This provider needs an adapter before live use.')
     if not endpoint.startswith('https://'):raise LLMError('The LLM endpoint must use HTTPS.')
     try:
@@ -168,16 +172,19 @@ def llm_answer(question,chunks,values=None,transport=None,_repair=False):
         return validate_answer(json.loads(text),chunks)
     except GroundingError as e:
         if _repair:raise
-        return llm_answer(question+'\nValidation feedback: '+str(e)+' Regenerate once using exact source quotes and only numeric notation present in those quotes. If unsupported, return insufficient_evidence.',chunks,v,transport,True)
+        return llm_answer(question+'\nValidation feedback: '+str(e)+' Regenerate once using exact source quotes and only numeric notation present in those quotes. If unsupported, return insufficient_evidence.',chunks,v,transport,True,_json_object)
     except urllib.error.HTTPError as e:
-        codes={401:'The LLM key was rejected.',403:'The provider denied this request. Check project and model permissions.',429:'The provider rate or quota limit was reached.'}
+        try:error=json.loads(e.read()).get('error',{})
+        except (ValueError,AttributeError,TypeError):error={}
+        if not isinstance(error,dict):error={}
+        code=error.get('code')
+        if e.code==400 and code=='json_validate_failed' and provider=='groq' and not _json_object:
+            return llm_answer(question+'\nReturn only the required JSON object. Use the exact status/claims/evidence structure provided in the system instructions.',chunks,v,transport,_repair,True)
+        codes={400:'The provider could not generate the required answer format. Please try the question again; evidence and charts are still available.',401:'The LLM key was rejected.',403:'The provider denied this request. Check project and model permissions.',429:'Groq’s request or token limit was reached. Please wait a minute and try again; evidence and charts are still available.',500:'Groq is temporarily unavailable. Please try again.',502:'Groq is temporarily unavailable. Please try again.',503:'Groq is temporarily unavailable. Please try again.'}
         if e.code==403:
-            try:
-                error=json.loads(e.read()).get('error',{});code=error.get('code')
-                if code in ['model_permission_blocked','model_permission_blocked_org','model_permission_blocked_project','model_not_allowed','model_not_found','insufficient_permissions','organization_restricted']:
-                    raise LLMError(codes[403]+' Provider code: '+code) from None
-            except (ValueError,AttributeError,TypeError):pass
-        raise LLMError(codes.get(e.code,'The LLM provider returned an error.')) from None
+            if code in ['model_permission_blocked','model_permission_blocked_org','model_permission_blocked_project','model_not_allowed','model_not_found','insufficient_permissions','organization_restricted']:
+                raise LLMError(codes[403]+' Provider code: '+code) from None
+        raise LLMError(codes.get(e.code,'The LLM provider returned an error.')+' (HTTP '+str(e.code)+')') from None
     except LLMError:raise
     except (ValueError,KeyError,TypeError,urllib.error.URLError,TimeoutError):
         raise LLMError('The LLM response could not be completed or parsed.') from None

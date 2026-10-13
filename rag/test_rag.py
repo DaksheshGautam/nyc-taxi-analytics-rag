@@ -53,6 +53,21 @@ class AnswerTests(unittest.TestCase):
     def test_openai_key_does_not_activate_groq(self):
         from rag import readiness
         self.assertFalse(readiness({'LLM_PROVIDER':'groq','OPENAI_API_KEY':'offline-placeholder','LLM_MODEL':'test'}))
+    def test_groq_schema_failure_retried_and_validated(self):
+        import io
+        calls=[]
+        def fake(url,payload):
+            calls.append(payload)
+            if len(calls)==1:raise urllib.error.HTTPError(url,400,'Bad Request',{},io.BytesIO(b'{"error":{"code":"json_validate_failed"}}'))
+            self.assertEqual(payload['response_format']['type'],'json_object')
+            return {'choices':[{'finish_reason':'stop','message':{'content':json.dumps(self.result)}}]}
+        self.assertEqual(llm_answer('Busiest hour?',self.chunks,{'LLM_PROVIDER':'groq','GROQ_API_KEY':'offline-placeholder','LLM_MODEL':'openai/gpt-oss-20b'},fake),self.result)
+        self.assertEqual(len(calls),2)
+    def test_rate_limit_has_actionable_message(self):
+        import io
+        def fake(url,payload):raise urllib.error.HTTPError(url,429,'Limited',{},io.BytesIO(b'{"error":{"code":"rate_limit_exceeded"}}'))
+        with self.assertRaisesRegex(LLMError,'wait a minute'):
+            llm_answer('Busiest hour?',self.chunks,{'LLM_PROVIDER':'groq','GROQ_API_KEY':'offline-placeholder','LLM_MODEL':'openai/gpt-oss-20b'},fake)
     def test_incomplete_response_withheld(self):
         with self.assertRaises(LLMError):llm_answer('Busiest hour?',self.chunks,{'OPENAI_API_KEY':'placeholder','LLM_MODEL':'test'},lambda *a:{'status':'incomplete','output':[]})
 

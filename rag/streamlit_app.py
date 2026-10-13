@@ -40,12 +40,18 @@ else:st.caption('Ask with supporting evidence · Questions and selected excerpts
 st.html('<div class="section-label">ASK A QUESTION</div>')
 examples={'Busiest hour':'Which pickup hour was busiest in 2025?','Cleaning rules':'Why were records excluded from operational and fare analysis?','Zone balance':'Which zones have more drop-offs than pickups?','Negative money':'What do negative money records mean?'}
 example_columns=st.columns(4)
+def select_example(prompt):
+    st.session_state['question_input']=prompt
+    st.session_state['pending_example']=prompt
 for col,(label,prompt) in zip(example_columns,examples.items()):
-    if col.button(label,use_container_width=True):st.session_state['question_input']=prompt
+    col.button(label,width='stretch',on_click=select_example,args=(prompt,))
 with st.form('question_form'):
     question=st.text_area('Your question',placeholder='Which pickup hour was busiest in 2025?',max_chars=2000,key='question_input',height=110)
     submitted=st.form_submit_button('Find evidence' if mode=='Search evidence' else 'Ask with evidence')
 if submitted:
+    pending=st.session_state.pop('pending_example','')
+    question=question.strip() or pending
+    previous_result=st.session_state.get('result')
     st.session_state.pop('result',None)
     if len(question.strip())<3:st.warning('Enter a question of at least three characters.')
     else:
@@ -54,7 +60,9 @@ if submitted:
         if not chunks:st.info('No matching project evidence was found.')
         elif mode=='Ask LLM':
             last=st.session_state.get('last_llm_request',0)
-            if time.monotonic()-last<10:st.warning('Please wait ten seconds between LLM requests.')
+            if time.monotonic()-last<10:
+                st.warning('Please wait ten seconds between LLM requests.')
+                if previous_result:st.session_state['result']=previous_result
             else:
                 st.session_state['last_llm_request']=time.monotonic()
                 try:
@@ -63,7 +71,7 @@ if submitted:
                 except GroundingError:st.session_state['result']={'claims':[],'sources':chunks,'message':'The generated answer failed grounding checks and was withheld.'}
                 except LLMError as e:st.session_state['result']={'claims':[],'sources':chunks,'message':str(e)}
         else:st.session_state['result']={'claims':[],'sources':chunks,'message':'Retrieved excerpts only — no LLM-generated answer.'}
-if submitted and 'result' in st.session_state:
+if submitted and 'result' in st.session_state and st.session_state['result'] is not previous_result:
     st.session_state['result']['question']=question
     st.session_state['result']['chart_selection']=st.session_state.get('detail_result')
 if 'result' in st.session_state:

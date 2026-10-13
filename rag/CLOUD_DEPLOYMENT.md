@@ -6,6 +6,6 @@ The `nyc_taxi` database has separate `results`, `detail`, `taxi_analysis` and `e
 
 Deploy the GitHub directory containing this app through Streamlit Community Cloud; entrypoint is `streamlit_app.py`. Store the reader connection and Groq key in Streamlit secrets, using `secrets.example.toml` as the template. Never commit `.streamlit/secrets.toml`. Provider setup follows [Groq documentation](https://console.groq.com/docs/structured-outputs); cloud secret handling follows [Streamlit documentation](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management).
 
-Public evidence search requires no access code. LLM mode requires both the server-side Groq key and `LLM_ACCESS_CODE`. Share the access code privately with intended testers. A ten-second per-session cooldown limits accidental repeated requests; it is not a global spending cap. Configure provider quota/spend controls before sharing the code broadly. Prompts and answers are not persisted in PostgreSQL.
+Evidence search and Groq answers are public and require no visitor access code or sign-in. The Groq key and SELECT-only Neon connection stay in server-side secrets. A ten-second per-session cooldown reduces accidental repeat requests; provider quotas still apply. Prompts and answers are not persisted in PostgreSQL. The full verified PDF is available directly beneath the title.
 
-The Neon free plan has resource limits and may suspend idle compute. This prototype does not promise continuous availability. Live Groq verification is pending key entry.
+The Neon free plan has resource limits and may suspend idle compute. This prototype does not promise continuous availability. A live busiest-hour answer was verified with report and result citations on 13 October 2026.

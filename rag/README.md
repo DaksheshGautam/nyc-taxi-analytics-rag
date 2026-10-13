@@ -6,7 +6,7 @@ A local retrieval-augmented question-answering app for the NYC yellow taxi proje
 
 Use Python 3.10 or later. From this folder run `python server.py`, or right-click `Start_RAG.ps1` and run with PowerShell. Open http://127.0.0.1:8765. Keep the terminal running; Ctrl+C stops the app. The prebuilt index needs no additional Python packages.
 
-**Evidence search works now without a key. Groq Cloud is configured as the default provider; live answers are pending your new key.** Search results are source excerpts, not generated answers. Questions are independent; conversation history is not sent.
+**Evidence search works now without a key. Groq Cloud is configured as the default provider; live answers were verified on 13 October 2026.** Search results are source excerpts, not generated answers. Questions are independent; conversation history is not sent.
 
 ## Included evidence
 
@@ -62,3 +62,8 @@ The verified Neon tables and indexes occupy 416,833,536 bytes. All five annual o
 ## Live verification
 
 On 13 October 2026, the deployed Groq adapter returned a busiest-hour answer with exact supporting quotes from the FAQ, report page 6 and hourly results. Invalid generated answers were withheld by grounding checks. This verifies that test question, not every possible answer. See live_llm_validation.json.
+
+
+## Public website
+
+https://nyc-taxi-evidence.streamlit.app/ is public. Visitors can ask the LLM without a sign-in or private access code, search evidence, explore compatible filtered database numbers, and download the complete report beneath the title. API keys and database credentials remain server-side.

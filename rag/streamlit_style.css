@@ -28,6 +28,7 @@ textarea:focus,input:focus{border-color:var(--yellow)!important}
 [data-testid="stCode"],pre{background:var(--navy)!important;border-radius:8px}
 blockquote{border-left:3px solid var(--teal)!important;color:#8299B0}
 a{color:var(--yellow)!important}
+[data-testid="stDownloadButton"] button[kind="primary"]{background:var(--yellow);color:var(--navy);border-color:var(--yellow);font-weight:700}
 hr{border-color:var(--border);margin:1.8rem 0}
 .section-label{font-size:.7rem;letter-spacing:.15em;color:var(--muted);font-weight:700;margin:.8rem 0}
 .taxi-footnote{font-size:.75rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1.3rem;margin-top:2rem}

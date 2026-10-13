@@ -1,5 +1,5 @@
 """Streamlit Cloud UI backed by the Neon PostgreSQL evidence snapshot."""
-import json,hmac,time,mimetypes,html
+import json,time,mimetypes,html
 import streamlit as st
 from rag import KnowledgeBase,config,readiness,llm_answer,GroundingError,LLMError,ROOT
 from cloud_store import load_knowledge,load_source
@@ -19,7 +19,6 @@ for k in ['GROQ_API_KEY','LLM_PROVIDER','LLM_MODEL','LLM_BASE_URL']:
 db=values.get('postgres',{})
 st.html('<div class="taxi-eyebrow">NYC YELLOW TAXI · PROJECT EVIDENCE</div>')
 st.title('Ask the analysis.')
-st.html('<p class="taxi-intro">Explore the report, definitions and recorded results.<br>Follow the evidence behind every answer.</p>')
 try:
     if db.get('url'):
         import hashlib
@@ -27,16 +26,17 @@ try:
     else:kb=KnowledgeBase();storage='Bundled snapshot — Neon connection pending'
 except Exception:
     st.error('The evidence database could not be verified. Please try again later.');st.stop()
+try:
+    report=next(m for m in kb.manifest if m['path']=='Analysis_Report.pdf')
+    report_bytes=load_source(db,report['path'],report['sha256']) if db.get('url') else (ROOT/'corpus'/report['path']).read_bytes()
+    st.download_button('↓ Download the full analysis report',report_bytes,'NYC_Taxi_Analysis_Report.pdf','application/pdf',type='primary')
+except Exception:st.caption('Report download is temporarily unavailable. Please try again later.')
+st.html('<p class="taxi-intro">Explore the report, definitions and recorded results.<br>Follow the evidence behind every answer.</p>')
 st.html(f'<div class="taxi-status"><span><span class="dot"></span>{html.escape(storage)}</span><span class="pill">{len(kb.manifest)} sources</span><span class="pill">{len(kb.chunks)} evidence excerpts</span><span class="pill">2025 analysis</span></div>')
-with st.expander('Private LLM access',expanded=False):
-    access=st.text_input('LLM access code',type='password',help='Evidence search is public. The access code enables requests using the project’s Groq key.')
-    st.caption('LLM mode sends your question and selected evidence to Groq. Questions are independent; chat history is not stored.')
-expected=values.get('LLM_ACCESS_CODE','')
-unlocked=bool(expected and access and hmac.compare_digest(access,expected))
-enabled=readiness(llm) and unlocked
-mode=st.radio('Answer mode',['Search evidence','Ask LLM'] if enabled else ['Search evidence'],horizontal=True)
+enabled=readiness(llm)
+mode=st.radio('Answer mode',['Ask LLM','Search evidence'] if enabled else ['Search evidence'],horizontal=True)
 if not readiness(llm):st.caption('Groq setup pending · Evidence search is available.')
-elif not unlocked:st.caption('Groq is configured · Open Private LLM access to enable generated answers.')
+else:st.caption('Ask with supporting evidence · Questions and selected excerpts are sent to Groq. No chat history is stored.')
 st.html('<div class="section-label">ASK A QUESTION</div>')
 examples={'Busiest hour':'Which pickup hour was busiest in 2025?','Cleaning rules':'Why were records excluded from operational and fare analysis?','Zone balance':'Which zones have more drop-offs than pickups?','Negative money':'What do negative money records mean?'}
 example_columns=st.columns(4)

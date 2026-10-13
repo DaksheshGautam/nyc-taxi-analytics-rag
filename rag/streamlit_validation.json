@@ -1,6 +1,7 @@
 {
   "interface_runs": true,
   "llm_disabled_without_key": true,
+  "public_llm_without_access_code": true,
   "busiest_hour_retrieval": true,
   "report_page_citation": true,
   "live_llm_tested": false

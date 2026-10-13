@@ -48,6 +48,9 @@ class AnswerTests(unittest.TestCase):
             self.assertEqual(url,'https://api.groq.com/openai/v1/chat/completions')
             self.assertEqual(payload['model'],'openai/gpt-oss-20b')
             self.assertTrue(payload['response_format']['json_schema']['strict'])
+            refs=payload['response_format']['json_schema']['schema']['properties']['claims']['items']['properties']['evidence']['items']['properties']
+            self.assertEqual(refs['source_id']['enum'],['fact-peak-hour'])
+            self.assertTrue(all(q in self.chunks[0]['text'] for q in refs['quote']['enum']))
             return {'choices':[{'finish_reason':'stop','message':{'content':json.dumps(self.result)}}]}
         self.assertEqual(llm_answer('Busiest hour?',self.chunks,{'LLM_PROVIDER':'groq','GROQ_API_KEY':'offline-placeholder','LLM_MODEL':'openai/gpt-oss-20b'},fake),self.result)
     def test_openai_key_does_not_activate_groq(self):

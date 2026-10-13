@@ -52,7 +52,7 @@ for col,(label,prompt) in zip(example_columns,examples.items()):
     col.button(label,width='stretch',on_click=select_example,args=(prompt,))
 with st.container():
     question=st.text_area('Your question',placeholder='Which pickup hour was busiest in 2025?',max_chars=2000,key='question_input',height=110,on_change=edited_question)
-    submitted=st.button('Find evidence' if mode=='Search evidence' else 'Ask with evidence',on_click=prepare_submission)
+    submitted=st.button('Find evidence' if mode=='Search evidence' else 'Ask with evidence',on_click=prepare_submission,disabled=len(question.strip())<3)
 if submitted:
     pending=st.session_state.pop('pending_example','')
     question=question.strip() or pending

@@ -1,0 +1,34 @@
+/* NYC taxi palette. Keep native Streamlit controls and accessible labels. */
+:root{color-scheme:dark;--yellow:#F7C948;--navy:#171C28;--panel:#252D3A;--border:#3A4352;--muted:#A0A8B5;--teal:#36A596;--blue:#3B82B8;--terracotta:#D97757}
+.stApp,[data-testid="stAppViewContainer"]{background:var(--navy);color:#F7F8FA}
+[data-testid="stHeader"]{background:var(--navy)}
+.stMainBlockContainer{max-width:1100px;padding-top:3.2rem;padding-bottom:3rem}
+h1{font-size:clamp(2.4rem,5vw,3.5rem)!important;letter-spacing:-.045em;font-weight:750!important;line-height:1.12!important;margin-bottom:.4rem!important}
+h2,h3{letter-spacing:-.025em}
+p,[data-testid="stCaptionContainer"]{line-height:1.65}
+[data-testid="stCaptionContainer"]{color:var(--muted)}
+.taxi-eyebrow{color:var(--yellow);font-size:.72rem;font-weight:750;letter-spacing:.2em;margin-bottom:1rem}
+.taxi-intro{color:var(--muted);font-size:1.1rem;max-width:660px;margin:0 0 1.4rem}
+.taxi-status{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;margin:.6rem 0 1.6rem;color:var(--muted);font-size:.8rem}
+.taxi-status .dot{display:inline-block;width:7px;height:7px;background:var(--teal);border-radius:50%;margin-right:7px}
+.taxi-status .pill{padding:5px 10px;background:var(--panel);border:1px solid var(--border);border-radius:20px}
+[data-testid="stForm"],[data-testid="stExpander"]{background:var(--panel);border:1px solid var(--border)!important;border-radius:14px!important}
+[data-testid="stForm"]{padding:1.4rem!important;margin:.6rem 0 1rem}
+[data-testid="stExpander"] summary{padding:.9rem 1.1rem}
+textarea,input,[data-baseweb="select"]>div{background:var(--navy)!important;color:#F7F8FA!important;border-color:var(--border)!important;border-radius:8px!important}
+textarea{font-size:1rem!important;line-height:1.65!important}
+textarea:focus,input:focus{border-color:var(--yellow)!important}
+[data-testid="stFormSubmitButton"] button{background:var(--yellow)!important;color:var(--navy)!important;border:0!important;font-weight:700;padding:.65rem 1.3rem;border-radius:8px}
+[data-testid="stButton"] button,[data-testid="stDownloadButton"] button{background:var(--panel);color:#8299B0;border:1px solid var(--border);border-radius:8px}
+[data-testid="stButton"] button:hover,[data-testid="stDownloadButton"] button:hover{color:var(--yellow);border-color:var(--yellow)}
+[data-testid="stRadio"]>div{gap:1.4rem}
+[data-testid="stAlert"]{background:#252D3A;border:1px solid #3A4352;border-left:3px solid var(--teal);border-radius:10px}
+[data-testid="stMetric"]{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem}
+[data-testid="stMetricValue"]{color:var(--yellow)}
+[data-testid="stCode"],pre{background:var(--navy)!important;border-radius:8px}
+blockquote{border-left:3px solid var(--teal)!important;color:#8299B0}
+a{color:var(--yellow)!important}
+hr{border-color:var(--border);margin:1.8rem 0}
+.section-label{font-size:.7rem;letter-spacing:.15em;color:var(--muted);font-weight:700;margin:.8rem 0}
+.taxi-footnote{font-size:.75rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1.3rem;margin-top:2rem}
+@media(max-width:650px){.stMainBlockContainer{padding:1.7rem 1rem 2rem}[data-testid="stForm"]{padding:1rem!important}.taxi-intro{font-size:1rem}}
